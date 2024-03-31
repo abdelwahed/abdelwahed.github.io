@@ -1,0 +1,313 @@
+{
+  "head": {
+    "title": "Abdelwahed Khamis",
+    "icon": "images/csiro.svg"
+  },
+  "header": {
+    "index": true,
+    "news": true,
+    "research": false,
+    "publication": true,
+    "fun": false
+  },
+  "name_en": "Abdelwahed Khamis",
+  "name_zn": "",
+  "name_tag": "Research Scientist, Data61, CSIRO",
+  "tel": "",
+  "email": "abdelwahed.khamis@data61.csiro.au",
+  "website": "",
+  "github": "",
+  "scholar": "https://scholar.google.com.au/citations?user=nj2jJB0AAAAJ&hl=en&oi=ao",
+  "city": "1 Technology Ct, Pullenvale QLD 4069",
+  "avatar": "images/default.jpg",
+  "introduction": "I am a Research Scientist at CSIRO's <a href=\"https://research.csiro.au/data61/\">Data61 </a> in the Distributed Sensing Systems group. In my research, I am broadly interested in Cyber-Physical Systems (CPS). This includes Intelligent and Multi-modal Sensing Systems, Internet of Things (IoT) and Embedded Intelligence. Check past and ongoing projects. </br> Prior to the current position, I was a postdoc in CSIRO's <a href=\"https://research.csiro.au/mlai-fsp/\"> Machine Learning and Artificial Intelligence Future Science Platform</a>. I obtained my PhD in Computer Science from the <a href=\"https://www.unsw.edu.au/\">University of New South Wales in Sydney</a> under the main supervision of Prof. <a href=\"https://research.unsw.edu.au/people/professor-wen-hu\">Wen Hu</a>.\n  ",
+  "cv_url": "",
+  "education": [
+    {
+      "school": "University of New South Wales, Sydney",
+      "major": "Ph.D. of Computer Science [2020]",
+      "period": "2016-2020"
+    }
+  ],
+  "publication": [
+    {
+      "title": "Scalable Optimal Transport Methods in Machine Learning: A Contemporary Survey",
+      "url": "https://arxiv.org/abs/2305.05080",
+      "author": [
+        "Abdelwahed Khamis",
+        "Russell Tsuchida",
+        "Mohamed Tarek",
+        "Vivien Rolland",
+        "Lars Petersson"
+      ],
+      "author_order": 1,
+      "conf_or_jour": "IEEE Transactions on Pattern Analysis and Machine Intelligence [IF: 23.6]",
+      "conf_short": "TPAMI",
+      "resource": {
+        "code_url": "https://github.com/abdelwahed/OT_for_big_data"
+      },
+      "selected": true
+    },
+    {
+      "title": "WiFi2Radar: Orientation Independent Single Receiver WiFi Sensing via WiFi to Radar Translation",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10380216",
+      "author": [
+        "Isura Nirmal",
+        "Abdelwahed Khamis",
+        "Mahbub Hassan",
+        "Wen Hu",
+        "Rui Li",
+        "Avinash Kalyanaraman"
+      ],
+      "author_order": 2,
+      "conf_or_jour": "IEEE Internet of Things Journal 2024 [IF: 10.6]",
+      "conf_short": "IoT Journal",
+      "resource": {
+        "paper_url": "files/wifi2radar_paper.pdf"
+      },
+      "selected": true
+    },
+    {
+      "title": "Topological deep learning: A review of an emerging paradigm",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-10710-9",
+      "author": [
+        "Ali Zia",
+        "Abdelwahed Khamis",
+        "James Nichols",
+        "Usman Bashir Tayab",
+        "Zeeshan Hayder",
+        "Vivien Rolland",
+        "Eric Stone",
+        "Lars Petersson"
+      ],
+      "author_order": 2,
+      "conf_or_jour": "Springer Arificial Intelligence Review 2024 [IF: 12.0]",
+      "conf_short": "AI Reviews",
+      "resource": {
+        "paper_url": "files/wifi2radar_paper.pdf"
+      },
+      "selected": true
+    },
+    {
+      "title": "OCHID-Fi: Occlusion-Robust Hand Pose Estimation in 3D via RF-Vision",
+      "url": "https://dl.acm.org/doi/10.1145/3242102.3242138",
+      "author": [
+        "Shujie Zhang",
+        "Tianyue Zheng",
+        "Zhe Chen",
+        "Jingzhi Hu",
+        "Abdelwahed Khamis",
+        "Jiajun Liu",
+        "Jun Luo"
+      ],
+      "author_order": 5,
+      "conf_or_jour": "ICCV 2023 (A*)",
+      "conf_short": "ICCV",
+      "resource": {
+        "paper_url": ""
+      },
+      "selected": true
+    },
+    {
+      "title": "ICML 2023 Topological Deep Learning Challenge: Design and Results",
+      "url": "https://proceedings.mlr.press/v221/papillon23a/papillon23a.pdf",
+      "author": [
+      ],
+      "conf_or_jour": "ICML TDL Workshop 2023",
+      "conf_short": "ICML Workshop",
+      "resource": {
+        "paper_url": ""
+      },
+      "selected": true
+    },
+    {
+      "title": "Real-time Multi-modal Object Detection and Tracking on Edge for Regulatory Compliance Monitoring",
+      "url": "https://arxiv.org/pdf/2310.03333.pdf",
+      "author": [
+        "Jia Syuen Lim",
+        "Ziwei Wang",
+        "Jiajun Liu",
+        "Abdelwahed Khamis",
+        "Reza Arablouei",
+        "Robert Barlow",
+        "Ryan McAllister"
+      ],
+      "author_order": 4,
+      "conf_or_jour": "ArXiv 2023",
+      "conf_short": "ArXiv",
+      "resource": {
+        "paper_url": ""
+      },
+      "selected": false
+    },
+    {
+      "title": "Deep Learning for Radio-based Human Sensing: Recent Advances and Future Directions",
+      "url": "https://arxiv.org/pdf/2010.12717",
+      "author": [
+        "Isura Nirmal",
+        "Abdelwahed Khamis",
+        "Mahbub Hassan",
+        "Wen Hu",
+        "Xiaoqing Zhu"
+      ],
+      "author_order": 2,
+      "conf_or_jour": "IEEE Communications Surveys and Tutorials [IF: 35.6]",
+      "conf_short": "COMST",
+      "resource": {
+        "paper_url": ""
+      },
+      "selected": true
+    },
+    {
+      "title": "H2B: Heartbeat-based secret key generation using piezo vibration sensors",
+      "url": "https://arxiv.org/pdf/1904.00750.pdf",
+      "author": [
+        "Qi Lin",
+        "Weitao Xu",
+        "Jun Liu",
+        "Abdelwahed Khamis",
+        "Wen Hu",
+        "Mahbub Hassan",
+        "Aruna Seneviratne"
+      ],
+      "author_order": 4,
+      "conf_or_jour": "IPSN 2019 [A*]",
+      "conf_short": "IPSN",
+      "resource": {
+        "paper_url": ""
+      },
+      "selected": true
+    },
+    {
+      "title": "RFWash: a weakly supervised tracking of hand hygiene technique",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3384419.3430733",
+      "author": [
+        "Abdelwahed Khamis",
+        "Branislav Kusy",
+        "Chun Tung Chou",
+        "Mary-Louise McLaws",
+        "Wen Hu"
+      ],
+      "author_order": 1,
+      "conf_or_jour": "SenSys 2020 [A*]",
+      "conf_short": "SenSys",
+      "resource": {
+        "paper_url": "files/rfwash_paper.pdf",
+        "video_url": "https://youtu.be/t28NXk9XABE"
+      },
+      "selected": true
+    },
+    {
+      "title": "Cardiofi: Enabling heart rate monitoring on unmodified COTS WiFi devices",
+      "url": "",
+      "author": [
+        "Abdelwahed Khamis",
+        "Chun Tung Chou",
+        "Branislav Kusy",
+        "Wen Hu"
+      ],
+      "author_order": 1,
+      "conf_or_jour": "Mobiquitious 2018",
+      "conf_short": "Mobiquitious",
+      "resource": {
+        "paper_url": "files/cariofi_paper.pdf"
+      },
+      "selected": true
+    },
+    {
+      "title": "Crossformer: Cross spatio-temporal transformer for 3d human pose estimation",
+      "url": "https://arxiv.org/pdf/2203.13387.pdf",
+      "author": [
+        "Mohammed Hassanin",
+        "Abdelwahed Khamis",
+        "Mohammed Bennamoun",
+        "Farid Boussaid",
+        "Ibrahim Radwan"
+      ],
+      "author_order": 2,
+      "conf_or_jour": "arxiv",
+      "conf_short": "arxiv",
+      "resource": {
+        "paper_url": "files/crossformer_paper.pdf"
+      },
+      "selected": false
+    },
+    {
+      "title": "WiRelax: Towards real-time respiratory biofeedback during meditation using WiFi",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1570870519308601",
+      "author": [
+        "Abdelwahed Khamis",
+        "Brano Kusy",
+        "Chun Tung Chou",
+        "Wen Hu"
+      ],
+      "author_order": 1,
+      "conf_or_jour": "Elsevier Ad Hoc Networks Journal 2020 [IF 4.8] ",
+      "conf_short": "Ad-Hoc Networks Journal",
+      "resource": {
+        "paper_url": "files/wirelax_paper.pdf"
+      },
+      "selected": true
+    }
+  ],
+  "team": [
+    "Ahmed Akl (PhD Student, April 2024 ~ Present)",
+    "Shang Gao (PhD Student, April 2024 ~ Present)",
+    "Dan Bretheron (Intern Student, Nov 2023- Feb 2024) - SensorGPT project"
+  ],
+  "news": [
+    {
+      "date": "March. 2024",
+      "content": "I was invited to serve as a <span class=\"item-bold\">TPC</span> in <span class=\"item-bold\">UbiComp/ISWC 2024 </span>"
+    },
+    {
+      "date": "March. 2024",
+      "content": "Our paper on <span class=\"item-bold\">Scalable Optimal Transport</span> was accepted by <span class=\"item-bold\">IEEE TPAMI </span>."
+    },
+    {
+      "date": "February. 2024",
+      "content": "I was invited to serve as a <span class=\"item-bold\">TPC</span> in International Workshop on Foundation Models for Cyber-Physical Systems & Internet of Things <span class=\"item-bold\">  (FMSys 24)</span>"
+    },
+    {
+      "date": "November. 2023",
+      "content": "I was invited to serve as a <span class=\"item-bold\">TPC</span> in  ACM/IEEE International Conference on Information Processing in Sensor Networks  <span class=\"item-bold\"> (IPSN 24)</span>"
+    },
+    {
+      "date": "October. 2023",
+      "content": "I was invited to serve as a <span class=\"item-bold\">TPC</span> in CM/IEEE Conference on Internet of Things Design and Implementation <span class=\"item-bold\"> (IoTDI 24)</span>"
+    }
+  ],
+  "news_show_count": 5,
+  "research": [
+    {
+      "topic": "Penetrative AI",
+      "project": [
+        {
+          "name": "",
+          "intro": "This project investigates the potential of large language models (LLMs), such as ChatGPT, to process IoT sensor data and accomplish tasks in the physical world, extending their capabilities beyond natural language processing. We term this endeavor Penetrative AI -- where the embedded world knowledge in LLMs serves as a foundation, seamlessly integrated with the Cyber-Physical Systems (CPS) for perceiving and intervening in the physical world.",
+          "publication": [
+            {
+              "title": "Penetrative AI (HotMobile)",
+              "url": "https://arxiv.org/abs/2310.09605"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "language": [
+    "Chinese",
+    "English"
+  ],
+  "hobby": [
+    "Travelling",
+    "Swimming",
+    "Singing",
+    "Cooking"
+  ],
+  "services": [
+    "Reviewer for TMC'24"
+  ],
+  "information": "Latest updated by February 2024",
+  "message": ""
+}
