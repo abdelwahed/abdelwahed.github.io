@@ -31,6 +31,19 @@
   ],
   "publication": [
     {
+      "title": "Real-time Multi-modal Object Detection and Tracking on Edge for Regulatory Compliance Monitoring",
+      "url": "https://arxiv.org/pdf/2310.03333.pdf",
+      "author": [
+        "Jia Syuen Lim", "Ziwei Wang", "Jiajun Liu", "Abdelwahed Khamis", "Reza Arablouei", "Robert Barlow", "Ryan McAllister"
+      ],
+      "author_order": 4,
+      "conf_or_jour": "International Joint Conference on Artificial Intelligence 2024 (A*)",
+      "conf_short": "IJCAI",
+      "resource": {
+      },
+      "selected": true
+    },
+    {
       "title": "Scalable Optimal Transport Methods in Machine Learning: A Contemporary Survey",
       "url": "https://arxiv.org/abs/2305.05080",
       "author": [
@@ -41,7 +54,7 @@
         "Lars Petersson"
       ],
       "author_order": 1,
-      "conf_or_jour": "IEEE Transactions on Pattern Analysis and Machine Intelligence [IF: 23.6]",
+      "conf_or_jour": "IEEE Transactions on Pattern Analysis and Machine Intelligence 2024 [IF: 23.6]",
       "conf_short": "TPAMI",
       "resource": {
         "code_url": "https://github.com/abdelwahed/OT_for_big_data"
@@ -257,12 +270,16 @@
   ],
   "news": [
     {
+      "date": "April. 2024",
+      "content": "A <span class=\"item-bold\"> demo on Object Multimodal Sensing </span> was accepted in <span class=\"item-bold\"> International Joint Conference on Artificial  Intelligence (IJCAI) </span>"
+    },
+    {
       "date": "March. 2024",
       "content": "I was invited to serve as a <span class=\"item-bold\">TPC</span> in <span class=\"item-bold\">UbiComp/ISWC 2024 </span>"
     },
     {
       "date": "March. 2024",
-      "content": "Our paper on <span class=\"item-bold\">Scalable Optimal Transport</span> was accepted by <span class=\"item-bold\">IEEE TPAMI </span>."
+      "content": "Our <span class=\"item-bold\"> paper on Scalable Optimal Transport</span> was accepted by <span class=\"item-bold\">IEEE TPAMI </span>."
     },
     {
       "date": "February. 2024",
