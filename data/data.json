@@ -6,7 +6,7 @@
   "header": {
     "index": true,
     "news": true,
-    "research": false,
+    "research": true,
     "publication": true,
     "fun": false
   },
@@ -19,8 +19,8 @@
   "github": "",
   "scholar": "https://scholar.google.com.au/citations?user=nj2jJB0AAAAJ&hl=en&oi=ao",
   "city": "1 Technology Ct, Pullenvale QLD 4069",
-  "avatar": "images/default.jpg",
-  "introduction": "I am a Research Scientist at CSIRO's <a href=\"https://research.csiro.au/data61/\">Data61 </a> in the Distributed Sensing Systems group. In my research, I am broadly interested in Cyber-Physical Systems (CPS). This includes Intelligent and Multi-modal Sensing Systems, Internet of Things (IoT) and Embedded Intelligence. Check past and ongoing projects. </br> Prior to the current position, I was a postdoc in CSIRO's <a href=\"https://research.csiro.au/mlai-fsp/\"> Machine Learning and Artificial Intelligence Future Science Platform</a>. I obtained my PhD in Computer Science from the <a href=\"https://www.unsw.edu.au/\">University of New South Wales in Sydney</a> under the main supervision of Prof. <a href=\"https://research.unsw.edu.au/people/professor-wen-hu\">Wen Hu</a>.\n  ",
+  "avatar": "images/default_2.jpg",
+  "introduction": "I am a Research Scientist at CSIRO's <a href=\"https://research.csiro.au/data61/\">Data61 </a> in the Distributed Sensing Systems group. In my research, I am broadly interested in Cyber-Physical Systems (CPS). This includes Intelligent and Multi-modal Sensing Systems, Internet of Things (IoT) and Embedded Intelligence. Check past and ongoing projects. </br> Prior to the current position, I was a postdoc in CSIRO's <a href=\"https://research.csiro.au/mlai-fsp/\"> Machine Learning and Artificial Intelligence Future Science Platform</a>. I obtained my PhD in Computer Science from the <a href=\"https://www.unsw.edu.au/\">University of New South Wales in Sydney</a> under the main supervision of Prof. <a href=\"https://research.unsw.edu.au/people/professor-wen-hu\">Wen Hu</a>.My PhD background is in Radio-based Sensing (<i>example past works include <a href=\"https://youtu.be/t28NXk9XABE\">RFWash </a> and <a href=\"https://youtu.be/LSMYWO0k3VY\">WiRelax </a></i>)\n  ",
   "cv_url": "",
   "education": [
     {
@@ -270,8 +270,12 @@
   ],
   "news": [
     {
+      "date": "Sep. 2024",
+      "content": "I was invited to serve as a <span class=\"item-bold\"> Session Chair </span> (mmWave Sensing) in International Conference in Pervasive and Ubiquitous Computing <span class=\"item-bold\">  (UbiComp 24) </span>"
+    },
+    {
       "date": "April. 2024",
-      "content": "A <span class=\"item-bold\"> demo on Object Multimodal Sensing </span> was accepted in <span class=\"item-bold\"> International Joint Conference on Artificial  Intelligence (IJCAI) </span>"
+      "content": "A <span class=\"item-bold\"> demo on Object Multimodal Sensing </span> was accepted in  International Joint Conference on Artificial  Intelligence <span class=\"item-bold\">  (IJCAI 24) </span>"
     },
     {
       "date": "March. 2024",
@@ -294,18 +298,18 @@
       "content": "I was invited to serve as a <span class=\"item-bold\">TPC</span> in CM/IEEE Conference on Internet of Things Design and Implementation <span class=\"item-bold\"> (IoTDI 24)</span>"
     }
   ],
-  "news_show_count": 5,
+  "news_show_count": 8,
   "research": [
     {
-      "topic": "Penetrative AI",
+      "topic": "Hand Pose Estimation Through Occlusion",
       "project": [
         {
           "name": "",
-          "intro": "This project investigates the potential of large language models (LLMs), such as ChatGPT, to process IoT sensor data and accomplish tasks in the physical world, extending their capabilities beyond natural language processing. We term this endeavor Penetrative AI -- where the embedded world knowledge in LLMs serves as a foundation, seamlessly integrated with the Cyber-Physical Systems (CPS) for perceiving and intervening in the physical world.",
+          "intro": " In this project, we exploit Radio-Frequency-Vision (RF-vision) capable of bypassing obstacles for build the first 3D RF-based (occluded) Hand Pose Estimation, OCHID-Fi.",
           "publication": [
             {
-              "title": "Penetrative AI (HotMobile)",
-              "url": "https://arxiv.org/abs/2310.09605"
+              "title": "OCHID-Fi: Occlusion-Robust Hand Pose Estimation in 3D via RF-Vision",
+              "url": "https://arxiv.org/abs/2308.10146"
             }
           ]
         }
@@ -313,7 +317,6 @@
     }
   ],
   "language": [
-    "Chinese",
     "English"
   ],
   "hobby": [
