@@ -31,6 +31,32 @@
   ],
   "publication": [
     {
+      "title": "Improving mmWavebased Hand Hygiene Monitoring through Beam Steering and Combining Techniques",
+      "url": "",
+      "author": [
+        "Isura Nirmal", "Wen Hu" , "Mahbub Hassan", "Elias Aboutanios" ,"Abdelwahed Khamis"
+      ],
+      "author_order": 5,
+      "conf_or_jour": "The International Conference on Embedded Networked Sensor Systems 2025 (A*)",
+      "conf_short": "SenSys",
+      "resource": {
+      },
+      "selected": true
+    },
+    {
+      "title": "NeuralPrefix: A Zero-shot Sensory Data Imputation Plugin",
+      "url": "https://arxiv.org/pdf/2502.05883",
+      "author": [
+        "Abdelwahed Khamis", "Sara Khalifa"
+      ],
+      "author_order": 1,
+      "conf_or_jour": "The International Conference on Pervasive Computing and Communications 2025 (A*)",
+      "conf_short": "PerCom",
+      "resource": {
+      },
+      "selected": true
+    },
+    {
       "title": "Real-time Multi-modal Object Detection and Tracking on Edge for Regulatory Compliance Monitoring",
       "url": "https://arxiv.org/pdf/2310.03333.pdf",
       "author": [
@@ -269,6 +295,18 @@
     "Dan Bretheron (Intern Student, Nov 2023- Feb 2024) - SensorGPT project"
   ],
   "news": [
+    {
+      "date": "March. 2025",
+      "content": "I was invited to serve as a <span class=\"item-bold\">TPC</span> in <span class=\"item-bold\">UbiComp/ISWC 2025 </span>"
+    },
+    {
+      "date": "March. 2025",
+      "content": "Our paper on <span class=\"item-bold\">  mmWave-based Hand Hygiene Monitoring through Beam Steering </span> was accepted by <span class=\"item-bold\"> SenSys 2025 </span>. </span>"
+    },
+    {
+      "date": "Jan. 2025",
+      "content": "Our paper on <span class=\"item-bold\"> Zero-shot Sensory Data Imputation </span> was accepted by <span class=\"item-bold\"> PerCom 2025 </span>. </span>"
+    },
     {
       "date": "Sep. 2024",
       "content": "I was invited to serve as a <span class=\"item-bold\"> Session Chair </span> (mmWave Sensing) in International Conference in Pervasive and Ubiquitous Computing <span class=\"item-bold\">  (UbiComp 24) </span>"
