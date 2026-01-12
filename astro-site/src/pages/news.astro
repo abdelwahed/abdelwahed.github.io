@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsItem from '../components/NewsItem.astro';
+
+import newsData from '../data/news.json';
+
+const news = newsData.items;
+---
+
+<BaseLayout title="News | Abdelwahed Khamis">
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <div class="mb-12 text-center">
+      <h1 class="font-serif text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+        News & Updates
+      </h1>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        Latest updates on publications, presentations, and academic activities.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Timeline line -->
+      <div class="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-amber-400 via-teal-400 to-slate-200 hidden md:block"></div>
+      
+      <!-- News Items -->
+      <div class="space-y-4 md:pl-12">
+        {news.map((item, index) => (
+          <div class="relative">
+            <!-- Timeline dot -->
+            <div class="absolute -left-12 top-5 w-3 h-3 rounded-full bg-amber-500 border-4 border-stone-50 hidden md:block"></div>
+            <NewsItem {...item} index={index} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+

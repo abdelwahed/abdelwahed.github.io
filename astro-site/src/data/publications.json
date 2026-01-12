@@ -1,0 +1,335 @@
+{
+  "items": [
+    {
+      "resources": {},
+      "authors": [
+        "Isura Nirmal",
+        "Wen Hu",
+        "Mahbub Hassan",
+        "Elias Aboutanios",
+        "Abdelwahed Khamis"
+      ],
+      "venueShort": "SenSys",
+      "url": "",
+      "venue": "The International Conference on Embedded Networked Sensor Systems 2025 (A*)",
+      "authorPosition": 5,
+      "title": "mmWave-based Hand Hygiene Monitoring through Beam Steering and Combining Techniques",
+      "selected": true,
+      "year": 2025,
+      "image": "/images/beamsteerx.png"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Renuka Sharma",
+        "Abdelwahed Khamis",
+        "Sara Khalifa",
+        "Dan Bretherton",
+        "Brano Kusy"
+      ],
+      "venueShort": "PerCom Workshops",
+      "url": "",
+      "venue": "PerCom Workshops 2025 (A*)",
+      "authorPosition": 2,
+      "title": "SensorGPT: A New Paradigm for Synthetic Sensory Data Generation",
+      "selected": true,
+      "url": "https://eprints.qut.edu.au/259417/1/SensorGPT_A_New_Paradigm_for_Synthetic_Sensory_Data_Generation.pdf",
+      "year": 2025,
+      "image": "/images/sensorgpt.jpg"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Renuka Sharma",
+        "Abdelwahed Khamis",
+        "Sara Khalifa",
+        "Dan Bretherton",
+        "Brano Kusy"
+      ],
+      "venueShort": "PerCom Workshops",
+      "url": "",
+      "venue": "PerCom Workshops 2025 (A*)",
+      "authorPosition": 2,
+      "title": "Synthetic Sensory Data Generators: How Much Progress Are We Making?",
+      "selected": true,
+      "url": "https://eprints.qut.edu.au/259414/1/Synthetic_Sensory_Data_Generators_How_Much_Progress_Are_We_Making.pdf",
+      "year": 2025,
+      "image": "/images/synthetic.jpg"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Ahmed Akl",
+        "Abdelwahed Khamis",
+        "Zhe Wang",
+        "Ali Cheraghian",
+        "Sara Khalifa",
+        "Kewen Wang"
+      ],
+      "venueShort": "BMVC",
+      "url": "",
+      "venue": "The British Machine Vision Conference (B)",
+      "url": "https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_294/paper.pdf",
+      "authorPosition": 2,
+      "title": "Task Progressive Curriculum Learning for Robust Visual Question Answering",
+      "selected": true,
+      "year": 2025,
+      "image": "/images/tpcl_signature.jpg"
+    },
+    {
+      "resources": {
+        "website": "https://neuralprefix.github.io/"
+      },
+      "authors": [
+        "Abdelwahed Khamis",
+        "Sara Khalifa"
+      ],
+      "venueShort": "PerCom",
+      "url": "https://arxiv.org/pdf/2502.05883",
+      "venue": "The International Conference on Pervasive Computing and Communications 2025 (A*)",
+      "authorPosition": 1,
+      "title": "NeuralPrefix: A Zero-shot Sensory Data Imputation Plugin",
+      "selected": true,
+      "year": 2025,
+      "image": "/images/NeuralPrefix.png"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Jia Syuen Lim",
+        "Ziwei Wang",
+        "Jiajun Liu",
+        "Abdelwahed Khamis",
+        "Reza Arablouei",
+        "Robert Barlow",
+        "Ryan McAllister"
+      ],
+      "venueShort": "IJCAI",
+      "url": "https://arxiv.org/pdf/2310.03333.pdf",
+      "venue": "International Joint Conference on Artificial Intelligence 2024 (A*)",
+      "authorPosition": 4,
+      "title": "Real-time Multi-modal Object Detection and Tracking on Edge for Regulatory Compliance Monitoring",
+      "selected": true,
+      "year": 2024,
+      "image": "/images/realtime_multimodal_object.png"
+    },
+    {
+      "resources": {
+        "code": "https://github.com/abdelwahed/OT_for_big_data"
+      },
+      "authors": [
+        "Abdelwahed Khamis",
+        "Russell Tsuchida",
+        "Mohamed Tarek",
+        "Vivien Rolland",
+        "Lars Petersson"
+      ],
+      "venueShort": "TPAMI",
+      "url": "https://arxiv.org/abs/2305.05080",
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence 2024 [IF: 23.6]",
+      "authorPosition": 1,
+      "title": "Scalable Optimal Transport Methods in Machine Learning: A Contemporary Survey",
+      "selected": true,
+      "year": 2024,
+      "image": "/images/OT.jpg"
+    },
+    {
+      "resources": {
+        "paper": "/files/wifi2radar_paper.pdf"
+      },
+      "authors": [
+        "Isura Nirmal",
+        "Abdelwahed Khamis",
+        "Mahbub Hassan",
+        "Wen Hu",
+        "Rui Li",
+        "Avinash Kalyanaraman"
+      ],
+      "venueShort": "IoT Journal",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10380216",
+      "venue": "IEEE Internet of Things Journal 2024 [IF: 10.6]",
+      "authorPosition": 2,
+      "title": "WiFi2Radar: Orientation Independent Single Receiver WiFi Sensing via WiFi to Radar Translation",
+      "selected": true,
+      "year": 2024,
+      "image": "/images/WiFi2Radar.png"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Ali Zia",
+        "Abdelwahed Khamis",
+        "James Nichols",
+        "Usman Bashir Tayab",
+        "Zeeshan Hayder",
+        "Vivien Rolland",
+        "Eric Stone",
+        "Lars Petersson"
+      ],
+      "venueShort": "AI Reviews",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-10710-9",
+      "venue": "Springer Artificial Intelligence Review 2024 [IF: 12.0]",
+      "authorPosition": 2,
+      "title": "Topological Deep Learning: A Review of an Emerging Paradigm",
+      "selected": true,
+      "year": 2024,
+      "image": "/images/topological_deep_learning.png"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Shujie Zhang",
+        "Tianyue Zheng",
+        "Zhe Chen",
+        "Jingzhi Hu",
+        "Abdelwahed Khamis",
+        "Jiajun Liu",
+        "Jun Luo"
+      ],
+      "venueShort": "ICCV",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_OCHID-Fi_Occlusion-Robust_Hand_Pose_Estimation_in_3D_via_RF-Vision_ICCV_2023_paper.pdf",
+      "venue": "ICCV 2023 (A*)",
+      "authorPosition": 5,
+      "title": "OCHID-Fi: Occlusion-Robust Hand Pose Estimation in 3D via RF-Vision",
+      "selected": true,
+      "year": 2023,
+      "image": "/images/OCHID.png"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Mathilde Papillon",
+        "Sophie G. Martin",
+        "Mustafa Hajij",
+        "Aldo Guzmán-Sáenz",
+        "Abdelwahed Khamis",
+        "Lars Petersson"
+      ],
+      "venueShort": "ICML Workshop",
+      "url": "https://proceedings.mlr.press/v221/papillon23a/papillon23a.pdf",
+      "venue": "ICML TDL Workshop 2023",
+      "authorPosition": 5,
+      "title": "ICML 2023 Topological Deep Learning Challenge: Design and Results",
+      "selected": true,
+      "year": 2023,
+      "image": "/images/tdl_challenge.jpg"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Isura Nirmal",
+        "Abdelwahed Khamis",
+        "Mahbub Hassan",
+        "Wen Hu",
+        "Xiaoqing Zhu"
+      ],
+      "venueShort": "COMST",
+      "url": "https://arxiv.org/pdf/2010.12717",
+      "venue": "IEEE Communications Surveys and Tutorials [IF: 35.6]",
+      "authorPosition": 2,
+      "title": "Deep Learning for Radio-based Human Sensing: Recent Advances and Future Directions",
+      "selected": true,
+      "year": 2022,
+      "image": "/images/rf_survey.jpg"
+    },
+    {
+      "resources": {},
+      "authors": [
+        "Qi Lin",
+        "Weitao Xu",
+        "Jun Liu",
+        "Abdelwahed Khamis",
+        "Wen Hu",
+        "Mahbub Hassan",
+        "Aruna Seneviratne"
+      ],
+      "venueShort": "IPSN",
+      "url": "https://arxiv.org/pdf/1904.00750.pdf",
+      "venue": "IPSN 2019 [A*]",
+      "authorPosition": 4,
+      "title": "H2B: Heartbeat-based Secret Key Generation Using Piezo Vibration Sensors",
+      "selected": true,
+      "year": 2019,
+      "image": "/images/h2b.jpg"
+    },
+    {
+      "resources": {
+        "paper": "/files/rfwash_paper.pdf",
+        "video": "https://youtu.be/t28NXk9XABE"
+      },
+      "authors": [
+        "Abdelwahed Khamis",
+        "Branislav Kusy",
+        "Chun Tung Chou",
+        "Mary-Louise McLaws",
+        "Wen Hu"
+      ],
+      "venueShort": "SenSys",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3384419.3430733",
+      "venue": "SenSys 2020 [A*]",
+      "authorPosition": 1,
+      "title": "RFWash: A Weakly Supervised Tracking of Hand Hygiene Technique",
+      "selected": true,
+      "year": 2020, 
+      "image": "/images/rfwash.jpg"
+    },
+    {
+      "resources": {
+        "paper": "/files/cardiofi_paper.pdf"
+      },
+      "authors": [
+        "Abdelwahed Khamis",
+        "Chun Tung Chou",
+        "Branislav Kusy",
+        "Wen Hu"
+      ],
+      "venueShort": "Mobiquitious",
+      "url": "",
+      "venue": "Mobiquitious 2018",
+      "authorPosition": 1,
+      "title": "Cardiofi: Enabling Heart Rate Monitoring on Unmodified COTS WiFi Devices",
+      "selected": true,
+      "year": 2018,
+      "image": "/images/cardiofi.jpg"
+    },
+    {
+      "resources": {
+        "paper": "/files/crossformer_paper.pdf"
+      },
+      "authors": [
+        "Mohammed Hassanin",
+        "Abdelwahed Khamis",
+        "Mohammed Bennamoun",
+        "Farid Boussaid",
+        "Ibrahim Radwan"
+      ],
+      "venueShort": "Signal, Image and Video Processing",
+      "url": "https://arxiv.org/pdf/2203.13387.pdf",
+      "venue": "Signal, Image and Video Processing 2025",
+      "authorPosition": 2,
+      "title": "Crossformer: Cross Spatio-temporal Transformer for 3D Human Pose Estimation",
+      "selected": false,
+      "year": 2025,
+      "image": "/images/crossformer.jpg"
+    },
+    {
+      "resources": {
+        "paper": "/files/wirelax_paper.pdf"
+      },
+      "authors": [
+        "Abdelwahed Khamis",
+        "Brano Kusy",
+        "Chun Tung Chou",
+        "Wen Hu"
+      ],
+      "venueShort": "Ad-Hoc Networks",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1570870519308601",
+      "venue": "Elsevier Ad Hoc Networks Journal 2020 [IF 4.8]",
+      "authorPosition": 1,
+      "title": "WiRelax: Towards Real-time Respiratory Biofeedback During Meditation Using WiFi",
+      "selected": true,
+      "year": 2020,
+      "image": "/images/wirelax.jpg"
+    }
+  ]
+}

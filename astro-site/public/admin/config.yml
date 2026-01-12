@@ -1,0 +1,163 @@
+# Decap CMS Configuration for Academic Website
+# https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: abdelwahed/abdelwahed.github.io
+  branch: redesign/astro-modern
+  # For GitHub Pages, use an OAuth proxy service
+  # Option 1: Use Sveltia CMS Auth (free, recommended)
+  # base_url: https://sveltia-cms-auth.YOUR_PROJECT.workers.dev
+  # Option 2: Use your own OAuth proxy
+  # base_url: https://your-oauth-proxy.com
+
+# Local backend for development (run: npx decap-server)
+local_backend: true
+
+# Media settings  
+media_folder: "astro-site/public/images"
+public_folder: "/images"
+
+# Site settings
+site_url: https://abdelwahed.github.io
+display_url: https://abdelwahed.github.io
+logo_url: /images/favicon.png
+
+# Slug settings
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# Collections (content types)
+collections:
+  # ===== SITE SETTINGS =====
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "profile"
+        label: "Profile Information"
+        file: "src/data/site.json"
+        fields:
+          - { name: "name", label: "Full Name", widget: "string" }
+          - { name: "title", label: "Job Title", widget: "string" }
+          - { name: "email", label: "Email", widget: "string" }
+          - { name: "location", label: "Location/Address", widget: "string" }
+          - { name: "avatar", label: "Profile Photo", widget: "image" }
+          - { name: "scholar", label: "Google Scholar URL", widget: "string" }
+          - { name: "linkedin", label: "LinkedIn URL", widget: "string" }
+          - { name: "introduction", label: "About Me (HTML allowed)", widget: "text" }
+          - name: "team"
+            label: "Team Members"
+            widget: "list"
+            collapsed: false
+            fields:
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "role", label: "Role", widget: "string" }
+              - { name: "period", label: "Period", widget: "string" }
+              - { name: "project", label: "Project (optional)", widget: "string", required: false }
+
+  # ===== NEWS (Single File) =====
+  - name: "news"
+    label: "News"
+    files:
+      - name: "all_news"
+        label: "All News Items"
+        file: "src/data/news.json"
+        fields:
+          - name: "items"
+            label: "News Items"
+            label_singular: "News Item"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.date}} - {{fields.content}}"
+            fields:
+              - { name: "date", label: "Date", widget: "string", hint: "e.g., March 2025" }
+              - { name: "content", label: "Content (HTML allowed)", widget: "text" }
+
+  # ===== PUBLICATIONS (Single File) =====
+  - name: "publications"
+    label: "Publications"
+    files:
+      - name: "all_publications"
+        label: "All Publications"
+        file: "src/data/publications.json"
+        fields:
+          - name: "items"
+            label: "Publications"
+            label_singular: "Publication"
+            widget: "list"
+            collapsed: true
+            summary: "{{fields.title}} ({{fields.venueShort}} {{fields.year}})"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "url", label: "Paper URL", widget: "string", required: false }
+              - name: "authors"
+                label: "Authors"
+                widget: "list"
+                collapsed: true
+                field: { name: "author", label: "Author Name", widget: "string" }
+              - { name: "authorPosition", label: "Your Position in Author List", widget: "number", value_type: "int", min: 1 }
+              - { name: "venue", label: "Venue (Full Name)", widget: "string" }
+              - { name: "venueShort", label: "Venue (Short)", widget: "string" }
+              - { name: "year", label: "Year", widget: "number", value_type: "int" }
+              - { name: "selected", label: "Show on Homepage", widget: "boolean", default: false }
+              - { name: "image", label: "Publication Thumbnail", widget: "image", required: false, hint: "Optional image/screenshot for this publication" }
+              - name: "resources"
+                label: "Resources"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { name: "paper", label: "PDF URL", widget: "string", required: false }
+                  - { name: "video", label: "Video URL", widget: "string", required: false }
+                  - { name: "code", label: "Code URL", widget: "string", required: false }
+                  - { name: "slides", label: "Slides URL", widget: "string", required: false }
+                  - { name: "website", label: "Project Website", widget: "string", required: false }
+
+  # ===== VIDEOS =====
+  - name: "videos"
+    label: "Videos"
+    files:
+      - name: "all_videos"
+        label: "System Demo Videos"
+        file: "src/data/videos.json"
+        fields:
+          - name: "items"
+            label: "Videos"
+            label_singular: "Video"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.title}} - {{fields.venue}}"
+            fields:
+              - { name: "id", label: "ID (lowercase, no spaces)", widget: "string", hint: "e.g., rfwash" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "subtitle", label: "Subtitle", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "youtubeId", label: "YouTube Video ID", widget: "string", hint: "The ID from the YouTube URL (e.g., t28NXk9XABE)" }
+              - { name: "venue", label: "Venue/Event", widget: "string" }
+              - name: "tags"
+                label: "Tags"
+                widget: "list"
+                field: { name: "tag", label: "Tag", widget: "string" }
+
+  # ===== BLOG POSTS (Individual files - for flexibility) =====
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "src/content/blog"
+    create: true
+    format: "frontmatter"
+    extension: "md"
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "summary", label: "Summary", widget: "text" }
+      - { name: "readTime", label: "Read Time", widget: "string", default: "10 min read" }
+      - name: "tags"
+        label: "Tags"
+        widget: "list"
+        field: { name: "tag", label: "Tag", widget: "string" }
+      - { name: "draft", label: "Draft", widget: "boolean", default: true }
+      - { name: "body", label: "Content", widget: "markdown" }

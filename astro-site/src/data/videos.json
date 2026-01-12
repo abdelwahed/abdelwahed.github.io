@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "rfwash",
+      "title": "RFWash",
+      "subtitle": "Radio-based Hand Hygiene Monitoring",
+      "description": "A millimeter-wave radar-based system for automatic hand hygiene monitoring in healthcare settings. Demonstrated at SenSys 2020.",
+      "youtubeId": "t28NXk9XABE",
+      "venue": "SenSys 2020",
+      "tags": ["mmWave Radar", "Healthcare", "Hand Hygiene"]
+    },
+    {
+      "id": "wirelax",
+      "title": "WiRelax",
+      "subtitle": "WiFi-based Relaxation Monitoring",
+      "description": "A WiFi-based system for non-intrusive relaxation and stress monitoring using channel state information.",
+      "youtubeId": "LSMYWO0k3VY",
+      "venue": "Demo",
+      "tags": ["WiFi Sensing", "Health Monitoring", "Stress Detection"]
+    }
+  ]
+}
+
+

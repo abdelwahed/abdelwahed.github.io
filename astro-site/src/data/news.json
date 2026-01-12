@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "date": "March 2025",
+      "content": "I was invited to serve as a <strong>TPC</strong> in <strong>UbiComp/ISWC 2025</strong>"
+    },
+    {
+      "date": "March 2025",
+      "content": "Our paper on <strong>mmWave-based Hand Hygiene Monitoring through Beam Steering</strong> was accepted by <strong>SenSys 2025</strong>"
+    },
+    {
+      "date": "March 2025",
+      "content": "I presented <strong>3 papers</strong> (one full and two workshops) in <strong>PerCom 2025</strong> in Washington, DC"
+    },
+    {
+      "date": "January 2025",
+      "content": "Our paper on <strong>Zero-shot Sensory Data Imputation</strong> was accepted by <strong>PerCom 2025</strong>"
+    },
+    {
+      "date": "September 2024",
+      "content": "I was invited to serve as a <strong>Session Chair</strong> (mmWave Sensing) in International Conference in Pervasive and Ubiquitous Computing <strong>(UbiComp 24)</strong>"
+    },
+    {
+      "date": "April 2024",
+      "content": "A <strong>demo on Object Multimodal Sensing</strong> was accepted in International Joint Conference on Artificial Intelligence <strong>(IJCAI 24)</strong>"
+    },
+    {
+      "date": "March 2024",
+      "content": "I was invited to serve as a <strong>TPC</strong> in <strong>UbiComp/ISWC 2024</strong>"
+    },
+    {
+      "date": "March 2024",
+      "content": "Our <strong>paper on Scalable Optimal Transport</strong> was accepted by <strong>IEEE TPAMI</strong>"
+    },
+    {
+      "date": "February 2024",
+      "content": "I was invited to serve as a <strong>TPC</strong> in International Workshop on Foundation Models for Cyber-Physical Systems & Internet of Things <strong>(FMSys 24)</strong>"
+    },
+    {
+      "date": "November 2023",
+      "content": "I was invited to serve as a <strong>TPC</strong> in ACM/IEEE International Conference on Information Processing in Sensor Networks <strong>(IPSN 24)</strong>"
+    },
+    {
+      "date": "October 2023",
+      "content": "I was invited to serve as a <strong>TPC</strong> in ACM/IEEE Conference on Internet of Things Design and Implementation <strong>(IoTDI 24)</strong>"
+    }
+  ]
+}

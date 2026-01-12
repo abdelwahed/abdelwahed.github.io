@@ -1,0 +1,29 @@
+{
+  "name": "Abdelwahed Khamis",
+  "title": "Research Scientist, Data61, CSIRO",
+  "email": "abdelwahed.khamis@data61.csiro.au",
+  "location": "1 Technology Ct, Pullenvale QLD 4069",
+  "avatar": "/images/abdo.png",
+  "scholar": "https://scholar.google.com.au/citations?user=nj2jJB0AAAAJ",
+  "linkedin": "https://au.linkedin.com/in/abdelwahed-khamiss",
+  "introduction": "I am a Research Scientist at CSIRO's <a href=\"https://research.csiro.au/data61/\" class=\"text-amber-600 hover:text-amber-500 transition-colors\">Data61</a> in the <a href=\"https://research.csiro.au/dss/\" class=\"text-amber-600 hover:text-amber-500 transition-colors\">Distributed Sensing Systems group</a>. In my research, I am broadly interested in Cyber-Physical Systems (CPS). This includes Intelligent and Multi-modal Sensing Systems, Internet of Things (IoT) and Embedded Intelligence.<br/><br/>Prior to the current position, I was a postdoc in CSIRO's <a href=\"https://research.csiro.au/mlai-fsp/\" class=\"text-amber-600 hover:text-amber-500 transition-colors\">Machine Learning and Artificial Intelligence Future Science Platform</a>. I obtained my PhD in Computer Science from the <a href=\"https://www.unsw.edu.au/\" class=\"text-amber-600 hover:text-amber-500 transition-colors\">University of New South Wales in Sydney</a> under the main supervision of Prof. <a href=\"https://research.unsw.edu.au/people/professor-wen-hu\" class=\"text-amber-600 hover:text-amber-500 transition-colors\">Wen Hu</a>. My PhD background is in Radio-based Sensing.",
+  "team": [
+    {
+      "name": "Ahmed Akl",
+      "role": "PhD Student",
+      "period": "April 2024 ~ Present"
+    },
+    {
+      "name": "Shang Gao",
+      "role": "PhD Student",
+      "period": "April 2024 ~ Present"
+    },
+    {
+      "name": "Dan Bretheron",
+      "role": "Intern Student",
+      "period": "Nov 2023 - Feb 2024",
+      "project": "SensorGPT project"
+    }
+  ]
+}
+

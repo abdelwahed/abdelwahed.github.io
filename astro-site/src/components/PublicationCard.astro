@@ -1,0 +1,148 @@
+---
+interface Props {
+  title: string;
+  url?: string;
+  authors: string[];
+  authorPosition: number;
+  venue: string;
+  venueShort: string;
+  year: number;
+  resources?: {
+    paper?: string;
+    video?: string;
+    code?: string;
+    slides?: string;
+    website?: string;
+  };
+  image?: string;
+  index?: number;
+  showImage?: boolean;
+}
+
+const { title, url, authors, authorPosition, venue, venueShort, year, resources = {}, image, index = 0, showImage = false } = Astro.props;
+const placeholderImage = "/images/publication-placeholder.svg";
+---
+
+<article 
+  class:list={[
+    "group bg-white rounded-xl shadow-sm border border-stone-200 hover:shadow-lg hover:border-amber-200 transition-all duration-300 hover:-translate-y-1",
+    showImage ? "flex flex-col md:flex-row gap-4 p-4" : "p-6"
+  ]}
+  style={`animation-delay: ${index * 50}ms`}
+>
+  {showImage && (
+    <div class="flex-shrink-0 w-full md:w-56 h-40 md:h-44 rounded-lg overflow-hidden bg-stone-50 flex items-center justify-center">
+      <img 
+        src={image || placeholderImage} 
+        alt={`${title} thumbnail`}
+        class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+      />
+    </div>
+  )}
+  
+  <div class={showImage ? "flex-1 flex flex-col justify-center" : ""}>
+  <!-- Venue Badge -->
+  <div class="flex items-start justify-between gap-4 mb-3">
+    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 border border-amber-200">
+      {venueShort} '{String(year).slice(-2)}
+    </span>
+  </div>
+
+  <!-- Title -->
+  {url ? (
+    <a href={url} target="_blank" rel="noopener noreferrer" class="block group/title">
+      <h3 class="font-serif text-lg font-semibold text-slate-800 group-hover/title:text-amber-600 transition-colors leading-snug mb-3">
+        {title}
+        <svg class="inline-block w-4 h-4 ml-1 opacity-0 group-hover/title:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </h3>
+    </a>
+  ) : (
+    <h3 class="font-serif text-lg font-semibold text-slate-800 leading-snug mb-3">
+      {title}
+    </h3>
+  )}
+
+  <!-- Authors -->
+  <p class="text-sm text-slate-600 mb-2">
+    {authors.map((author, idx) => (
+      <>
+        {idx > 0 && <span class="text-slate-400">, </span>}
+        <span class:list={[
+          idx + 1 === authorPosition ? "font-semibold text-slate-800" : ""
+        ]}>
+          {author}
+        </span>
+      </>
+    ))}
+  </p>
+
+  <!-- Venue -->
+  <p class="text-sm text-teal-700 font-medium mb-4">
+    {venue}
+  </p>
+
+  <!-- Resources -->
+  {Object.keys(resources).length > 0 && (
+    <div class="flex flex-wrap gap-2 pt-3 border-t border-stone-100">
+      {resources.paper && (
+        <a 
+          href={resources.paper} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-600 bg-stone-100 rounded-lg hover:bg-amber-100 hover:text-amber-700 transition-colors"
+        >
+          <i class="fas fa-file-pdf"></i>
+          PDF
+        </a>
+      )}
+      {resources.video && (
+        <a 
+          href={resources.video} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-600 bg-stone-100 rounded-lg hover:bg-amber-100 hover:text-amber-700 transition-colors"
+        >
+          <i class="fas fa-video"></i>
+          Video
+        </a>
+      )}
+      {resources.code && (
+        <a 
+          href={resources.code} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-600 bg-stone-100 rounded-lg hover:bg-amber-100 hover:text-amber-700 transition-colors"
+        >
+          <i class="fab fa-github"></i>
+          Code
+        </a>
+      )}
+      {resources.slides && (
+        <a 
+          href={resources.slides} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-600 bg-stone-100 rounded-lg hover:bg-amber-100 hover:text-amber-700 transition-colors"
+        >
+          <i class="fas fa-images"></i>
+          Slides
+        </a>
+      )}
+      {resources.website && (
+        <a 
+          href={resources.website} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-600 bg-stone-100 rounded-lg hover:bg-amber-100 hover:text-amber-700 transition-colors"
+        >
+          <i class="fas fa-globe"></i>
+          Website
+        </a>
+      )}
+    </div>
+  )}
+  </div>
+</article>
+

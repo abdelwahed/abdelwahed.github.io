@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import lecturesData from '../data/lectures.json';
+
+const lectures = lecturesData.items;
+
+// YouTube thumbnail URL - maxresdefault for highest resolution
+const getThumbnail = (videoId: string) => `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+---
+
+<BaseLayout title="Lectures & Talks | Abdelwahed Khamis">
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <div class="mb-10">
+      <h1 class="font-mono text-3xl font-bold text-slate-800 mb-2">
+        Lectures & Talks
+      </h1>
+      <p class="text-slate-600">
+        Teaching materials and invited talks on machine learning and sensing systems.
+      </p>
+    </div>
+
+    <!-- Lectures List -->
+    <div class="space-y-12">
+      {lectures.map((lecture) => (
+        <article>
+          <!-- Header -->
+          <div class="mb-5">
+            <div class="flex items-baseline gap-3 mb-2">
+              <h2 class="font-mono text-xl font-semibold text-slate-800">
+                {lecture.title}
+              </h2>
+              {lecture.year && (
+                <span class="text-sm text-slate-500">({lecture.year})</span>
+              )}
+            </div>
+            
+            <!-- Venues -->
+            {lecture.venues && lecture.venues.length > 0 && (
+              <div class="mb-3">
+                <p class="text-xs uppercase tracking-wide text-slate-500 mb-1">Presented at</p>
+                <ul class="text-sm text-slate-600 space-y-0.5">
+                  {lecture.venues.map((venue) => (
+                    <li class="flex items-start gap-2">
+                      <span class="text-amber-500 mt-1">•</span>
+                      <span>{venue}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            
+            <p class="text-slate-700 text-sm leading-relaxed">
+              {lecture.description}
+            </p>
+          </div>
+
+          <!-- Thumbnail + Video List -->
+          {lecture.type === 'playlist' && lecture.videos && lecture.videos.length > 1 && (
+            <div class="flex flex-col md:flex-row gap-6">
+              <!-- Single Featured Thumbnail (second video) -->
+              <a 
+                href={`https://www.youtube.com/watch?v=${lecture.videos[1].youtubeId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block relative group overflow-hidden rounded-lg bg-slate-100 flex-shrink-0 md:w-80"
+              >
+                <img 
+                  src={getThumbnail(lecture.videos[1].youtubeId)}
+                  alt={lecture.title}
+                  class="w-full aspect-video object-cover group-hover:opacity-90 transition-opacity"
+                />
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                  <svg class="w-12 h-12 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </a>
+              
+              <!-- Video List -->
+              <div class="flex-1">
+                <p class="text-xs uppercase tracking-wide text-slate-500 mb-2">
+                  Lecture Videos
+                </p>
+                <ol class="space-y-1.5 list-decimal list-inside">
+                  {lecture.videos.map((video) => (
+                    <li class="text-slate-400 text-sm">
+                      <a 
+                        href={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-slate-700 hover:text-amber-600 transition-colors"
+                      >
+                        {video.title}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          )}
+
+          <!-- Single Video -->
+          {lecture.type === 'single' && lecture.youtubeId && (
+            <div class="flex flex-col md:flex-row gap-6">
+              <a 
+                href={`https://www.youtube.com/watch?v=${lecture.youtubeId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block relative group overflow-hidden rounded-lg bg-slate-100 md:w-80 flex-shrink-0"
+              >
+                <img 
+                  src={getThumbnail(lecture.youtubeId)}
+                  alt={lecture.title}
+                  class="w-full aspect-video object-cover group-hover:opacity-90 transition-opacity"
+                />
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                  <svg class="w-12 h-12 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </a>
+              <div>
+                <a 
+                  href={`https://www.youtube.com/watch?v=${lecture.youtubeId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-sm text-slate-700 hover:text-amber-600 transition-colors"
+                >
+                  Watch on YouTube →
+                </a>
+              </div>
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

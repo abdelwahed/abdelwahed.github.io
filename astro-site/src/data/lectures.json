@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": "deep-learning-intro",
+      "title": "Introduction to Deep Learning",
+      "type": "playlist",
+      "description": "A lecture series covering the fundamentals of deep learning, including neural network architectures, forward propagation, loss functions, optimization, and the backpropagation algorithm.",
+      "venues": [
+        "Queensland University of Technology (Guest Lecture)",
+        "University of Queensland (Guest Lecture)",
+        "CSIRO NextGEN Graduate Program"
+      ],
+      "year": 2024,
+      "videos": [
+        {
+          "youtubeId": "zOAD4j1X4kw",
+          "title": "Neural Networks Overview"
+        },
+        {
+          "youtubeId": "1a5eGazjMcw",
+          "title": "Forward Propagation"
+        },
+        {
+          "youtubeId": "KpB878PFQL4",
+          "title": "Loss Functions & Optimization"
+        },
+        {
+          "youtubeId": "K19rZgCdreY",
+          "title": "Backpropagation Algorithm"
+        }
+      ]
+    }
+  ]
+}
+
