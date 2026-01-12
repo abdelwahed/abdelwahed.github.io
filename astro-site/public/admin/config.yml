@@ -5,11 +5,8 @@ backend:
   name: github
   repo: abdelwahed/abdelwahed.github.io
   branch: redesign/astro-modern
-  # For GitHub Pages, use an OAuth proxy service
-  # Option 1: Use Sveltia CMS Auth (free, recommended)
-  # base_url: https://sveltia-cms-auth.YOUR_PROJECT.workers.dev
-  # Option 2: Use your own OAuth proxy
-  # base_url: https://your-oauth-proxy.com
+  base_url: https://cms-auth.eng-abdo-fci.workers.dev
+  auth_endpoint: /auth
 
 # Local backend for development (run: npx decap-server)
 local_backend: true
