@@ -8,8 +8,8 @@ backend:
   base_url: https://cms-auth.eng-abdo-fci.workers.dev
   auth_endpoint: /auth
 
-# Local backend for development (run: npx decap-server)
-local_backend: true
+# Uncomment for local development (run: npx decap-server)
+# local_backend: true
 
 # Media settings  
 media_folder: "astro-site/public/images"
