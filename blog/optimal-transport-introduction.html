@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Introduction to Optimal Transport - Blog - Abdelwahed Khamis</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../images/NTU.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/slicknav.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+<div class="main-content" v-bind:class="{ 'loaded': isLoaded }">
+    <div id="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div id="header">
+        <header class="header">
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li class="nav-item" v-if="index" :class="{ current: currentPage === 'index' }">
+                        <a href="../index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item" v-if="blog" :class="{ current: currentPage === 'blog' }">
+                        <a href="../blog.html" class="nav-link">BLOG</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="main-wrapper" id="container">
+        <div class="container">
+            <article class="shadow-lg resume-wrapper">
+                <div class="resume-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="blog-post">
+                                <h1 class="blog-post-title">Introduction to Optimal Transport Theory</h1>
+                                <div class="blog-post-meta">
+                                    <span class="blog-post-date">March 15, 2024</span>
+                                    <span class="blog-post-author">By Abdelwahed Khamis</span>
+                                </div>
+                                
+                                <div class="blog-post-content">
+                                    <img src="../images/blog/optimal-transport-main.jpg" alt="Optimal Transport" class="blog-post-main-image">
+                                    
+                                    <h2>What is Optimal Transport?</h2>
+                                    <p>Optimal Transport (OT) is a mathematical framework that provides a way to compare probability distributions by finding the most efficient way to transform one distribution into another. The concept was first introduced by Gaspard Monge in 1781 and later developed by Leonid Kantorovich in the 1940s.</p>
+
+                                    <div class="blog-post-diagram">
+                                        <img src="../images/blog/ot-diagram1.jpg" alt="Optimal Transport Diagram" class="img-fluid">
+                                        <p class="diagram-caption">Figure 1: Visual representation of optimal transport between two distributions</p>
+                                    </div>
+
+                                    <h2>The Mathematical Formulation</h2>
+                                    <p>Given two probability measures \(\mu\) and \(\nu\) on spaces \(X\) and \(Y\) respectively, the optimal transport problem seeks to find a transport plan \(\pi\) that minimizes the total cost of moving mass from \(\mu\) to \(\nu\). The problem can be formulated as:</p>
+
+                                    <div class="math-block-with-caption">
+                                        <div class="math-block">
+                                            \[
+                                            \inf_{\pi \in \Pi(\mu, \nu)} \int_{X \times Y} \color{blue}{c(x,y)} \color{red}{d\pi(x,y)}
+                                            \]
+                                        </div>
+                                        <div class="math-caption">Equation 1: The optimal transport problem formulation</div>
+                                    </div>
+
+                                    <p>where \(\Pi(\mu, \nu)\) is the set of all transport plans between \(\mu\) and \(\nu\), and \(\color{blue}{c(x,y)}\) is the cost function.</p>
+
+                                    <div class="blog-post-diagram">
+                                        <img src="../images/blog/ot-diagram2.jpg" alt="Transport Plan Diagram" class="img-fluid">
+                                        <p class="diagram-caption">Figure 2: Example of a transport plan between discrete distributions</p>
+                                    </div>
+
+                                    <h2>The Wasserstein Distance</h2>
+                                    <p>When the cost function is a metric, the optimal transport problem defines a distance between probability measures known as the Wasserstein distance (or Earth Mover's Distance):</p>
+
+                                    <div class="math-block-with-caption">
+                                        <div class="math-block">
+                                            \[
+                                            W_p(\mu, \nu) = \left( \inf_{\pi \in \Pi(\mu, \nu)} \int_{X \times Y} \color{green}{d(x,y)^p} \color{red}{d\pi(x,y)} \right)^{1/p}
+                                            \]
+                                        </div>
+                                        <div class="math-caption">Equation 2: The Wasserstein distance definition</div>
+                                    </div>
+
+                                    <h2>Applications in Machine Learning</h2>
+                                    <p>Optimal Transport has found numerous applications in machine learning, including:</p>
+                                    <ul>
+                                        <li>Generative models (GANs, WGAN)</li>
+                                        <li>Domain adaptation</li>
+                                        <li>Clustering and classification</li>
+                                        <li>Natural language processing</li>
+                                    </ul>
+
+                                    <h2>Example: Computing the Wasserstein Distance</h2>
+                                    <p>Consider two discrete distributions \(\mu\) and \(\nu\) with support points \(x_1, x_2\) and \(y_1, y_2\) respectively. The optimal transport problem becomes a linear programming problem:</p>
+
+                                    <div class="math-block-with-caption">
+                                        <div class="math-block">
+                                            \[
+                                            \begin{align}
+                                            \min_{P} & \sum_{i,j} \color{blue}{c_{ij}} \color{red}{p_{ij}} \\
+                                            \text{s.t.} & \sum_j \color{red}{p_{ij}} = \color{green}{\mu_i} \\
+                                            & \sum_i \color{red}{p_{ij}} = \color{green}{\nu_j} \\
+                                            & \color{red}{p_{ij}} \geq 0
+                                            \end{align}
+                                            \]
+                                        </div>
+                                        <div class="math-caption">Equation 3: The linear programming formulation of the optimal transport problem</div>
+                                    </div>
+
+                                    <h2>Conclusion</h2>
+                                    <p>Optimal Transport provides a powerful framework for comparing and transforming probability distributions. Its applications in machine learning and data science continue to grow, making it an essential tool in modern data analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer class="footer text-center py-4">
+        <small class="copyright">{{information}}</small>
+    </footer>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/all.min.js"></script>
+<script src="../js/jquery.nav.js"></script>
+<script src="../js/jquery.slicknav.min.js"></script>
+<script src="../js/index-vue.js"></script>
+</body>
+</html> 

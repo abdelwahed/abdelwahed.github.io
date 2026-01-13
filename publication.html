@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
-<head >
+<head>
     <title>Abdelwahed Khamis</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -19,84 +19,70 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
-<body >
-<!-- Header Area -->
-<header class="header shadow-lg">
-    <div class="header-inner">
+<body>
+<div class="main-content" v-bind:class="{ 'loaded': isLoaded }">
+    <header class="header">
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item" v-if="index" :class="{ current: currentPage === 'index' }">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item" v-if="news" :class="{ current: currentPage === 'news' }">
+                    <a href="news.html" class="nav-link">NEWS</a>
+                </li>
+                <li class="nav-item" v-if="publication" :class="{ current: currentPage === 'publication' }">
+                    <a href="publication.html" class="nav-link">PUBLICATION</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper" id="container">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-2 col-xs-12">
+            <article class="shadow-lg resume-wrapper">
+                <div class="resume-body">
+                    <div class="row">
+                        <aside class="resume-aside col-sm-12 col-md-12 col-lg-12">
+                            <section class="education-section py-3">
+                                <h3 class="text-uppercase resume-section-heading mb-4">Publications</h3>
+                                <div v-for="(item, index) in publication" class="item mb-3">
+                                    <span class="badge text-bg-primary" style="background-color: #ffc107;color:black ">&nbsp;&nbsp;{{item.conf_short}}&nbsp;&nbsp;</span>
+                                    <a v-bind:href="item.url" target="_blank"><h4 class="item-title mb-2">{{item.title}}</h4></a>
+                                    <div class="item-author">
+                                        <span v-for="(item_author, index_author) in item.author">
+                                            <span v-if="index_author != 0">, </span>
+                                            <span v-if="item.author_order == index_author + 1" class="item-myself">{{item_author}}</span>
+                                            <span v-else>{{item_author}}</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-conf-jour">{{item.conf_or_jour}}</div>
+                                    <div class="item-resource">
+                                        <a v-if="item.resource.hasOwnProperty('paper_url')" v-bind:href="item.resource.paper_url"><i class="fa fa-file-pdf"></i></a>
+                                        <a v-if="item.resource.hasOwnProperty('slide_url')" v-bind:href="item.resource.slide_url"><i class="fa fa-file-image"></i></a>
+                                        <a v-if="item.resource.hasOwnProperty('video_url')" v-bind:href="item.resource.video_url"><i class="fa fa-file-video"></i></a>
+                                        <a v-if="item.resource.hasOwnProperty('code_url')" v-bind:href="item.resource.code_url"><i class="fa fa-github"></i></a>
+                                        <a v-if="item.resource.hasOwnProperty('website_url')" v-bind:href="item.resource.website_url"><i class="fa fa-globe"></i></a>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>
+                    </div>
                 </div>
-                <div class="col-md-9 col-sm-10 col-xs-12">
-                    <div class="mobile-menu"></div>
-                    <nav class="navbar navbar-default">
-                        <div class="collapse navbar-collapse">
-                            <ul id="nav" class="nav navbar-nav">
-                                <li v-if="index"><a href="index.html">Home</a></li>
-                                <li v-if="news"><a href="news.html">News</a></li>
-<!--                                <li v-if="research"><a href="research.html">Research</a></li>-->
-                                <li class="current" v-if="publication"><a href="publication.html">Publication</a></li>
-                                <li v-if="fun"><a href="fun.html">Fun</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+                <hr>
+            </article>
         </div>
     </div>
-    <!--/ End Header Inner -->
-</header>
-<!-- End Header Area -->
-<div class="main-wrapper" id="container">
-    <div class="container">
-        <article class="shadow-lg resume-wrapper">
-            <div class="row">
-                <div class="resume-main col-sm-12 col-md-12 col-lg-12">
-                    <section class="publication-section">
-                        <h3 class="text-uppercase resume-section-heading mb-4">Publications</h3>
-                        <div class="item mb-3" v-for="item in publication">
-                            <a v-bind:href="item.url" target="_blank"><h4 class="item-title mb-2 ">{{item.title}}</h4></a>
-                            <div class="item-author">
-                                    <span v-for="(item_author, index_author) in item.author">
-                                        <span v-if="index_author != 0">, </span>
-                                        <span v-if="item.author_order == index_author + 1" class="item-myself">{{item_author}}</span>
-                                        <span v-else>{{item_author}}</span>
-                                    </span>
-                            </div>
-                            <div class="item-conf-jour">{{item.conf_or_jour}}</div>
-                            <div class="item-resource">
-                                <a v-if="item.resource.hasOwnProperty('paper_url')" v-bind:href="item.resource.paper_url"><i class="fa fa-file-pdf"></i></a>
-                                <a v-if="item.resource.hasOwnProperty('slide_url')" v-bind:href="item.resource.slide_url"><i class="fa fa-file-image"></i></a>
-                                <a v-if="item.resource.hasOwnProperty('video_url')" v-bind:href="item.resource.video_url"><i class="fa fa-file-video"></i></a>
-                                <a v-if="item.resource.hasOwnProperty('code_url')" v-bind:href="item.resource.code_url"><i class="fa fa-file-code"></i></a>
-                                <a v-if="item.resource.hasOwnProperty('website_url')" v-bind:href="item.resource.website_url"><i class="fa fa-globe"></i></i></a>
-                            </div>
-                        </div>
-                    </section><!--//work-section-->
 
-                </div><!--//resume-main-->
-            </div><!--//row-->
-        </article>
-
-    </div><!--//container-->
-
-
-
+    <footer class="footer text-center py-4">
+        <small class="copyright">{{information}}</small>
+    </footer>
 </div>
 
-<footer class="footer text-center py-4">
-    <small class="copyright"> {{information}}</small>
-</footer>
-
-
-<script src="js/jquery.min.js">  </script>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/all.min.js"></script>
 <script src="js/jquery.nav.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
-<!--<script src="js/main.js"></script>-->
-
-
 <script src="js/index-vue.js"></script>
 </body>
 </html>

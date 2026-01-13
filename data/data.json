@@ -151,7 +151,14 @@
       "title": "ICML 2023 Topological Deep Learning Challenge: Design and Results",
       "url": "https://proceedings.mlr.press/v221/papillon23a/papillon23a.pdf",
       "author": [
+        "Mathilde Papillon",
+        "Sophie G. Martin",
+        "Mustafa Hajij",
+        "Aldo Guzmán-Sáenz",
+        "Abdelwahed Khamis",
+        "Lars Petersson"
       ],
+      "author_order": 5,
       "conf_or_jour": "ICML TDL Workshop 2023",
       "conf_short": "ICML Workshop",
       "resource": {
@@ -302,6 +309,10 @@
     {
       "date": "March. 2025",
       "content": "Our paper on <span class=\"item-bold\">  mmWave-based Hand Hygiene Monitoring through Beam Steering </span> was accepted by <span class=\"item-bold\"> SenSys 2025 </span>. </span>"
+    },
+    {
+      "date": "March. 2025",
+      "content": "I presented <span class=\"item-bold\"> 3 papers </span> (one full and two workshops) in <span class=\"item-bold\"> PerCom 2025 </span> in Washington, DC. </span>"
     },
     {
       "date": "Jan. 2025",

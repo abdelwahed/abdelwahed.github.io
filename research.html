@@ -21,30 +21,23 @@
 
 <body >
 <!-- Header Area -->
-<header class="header shadow-lg">
-    <div class="header-inner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-2 col-xs-12">
-                </div>
-                <div class="col-md-9 col-sm-10 col-xs-12">
-                    <div class="mobile-menu"></div>
-                    <nav class="navbar navbar-default">
-                        <div class="collapse navbar-collapse">
-                            <ul id="nav" class="nav navbar-nav">
-                                <li v-if="index"><a href="index.html">Home</a></li>
-                                <li v-if="news"><a href="news.html">News</a></li>
-                                <li class="current" v-if="research"><a href="research.html">Research</a></li>
-                                <li v-if="publication"><a href="publication.html">Publication</a></li>
-                                <li v-if="fun"><a href="fun.html">Fun</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ End Header Inner -->
+<header class="header">
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item" v-if="index" :class="{ current: currentPage === 'index' }">
+                <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item" v-if="news" :class="{ current: currentPage === 'news' }">
+                <a class="nav-link" href="news.html">NEWS</a>
+            </li>
+            <li class="nav-item" v-if="publication" :class="{ current: currentPage === 'publication' }">
+                <a class="nav-link" href="publication.html">PUBLICATION</a>
+            </li>
+            <li class="nav-item" v-if="research" :class="{ current: currentPage === 'research' }">
+                <a class="nav-link" href="research.html">RESEARCH</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <!-- End Header Area -->
 <div class="main-wrapper" id="container">

@@ -1,8 +1,7 @@
-
 /* body */
 html{height: 100%;}
 body{
-	font-family: 'Fira Sans', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 400;
 	font-size:1.4rem;
 	position:relative;
@@ -32,7 +31,7 @@ footer{
 /*}*/
 
 a {
-	color: #2e5a88;
+	color: var(--primary-blue);
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -50,7 +49,7 @@ a.resume-link {
 }
 
 .resume-link:hover{
-	color: #2e5a88;
+	color: var(--primary-blue);
 	text-decoration: underline;
 }
 
@@ -94,17 +93,17 @@ a.resume-link {
 }
 
 ::-moz-selection {
-	background-color: #2e5a88;
+	background-color: var(--primary-blue);
 	color: #fff;
 }
 
 ::selection {
-	background-color: #2e5a88;
+	background-color: var(--primary-blue);
 	color: #fff;
 }
 ::-moz-selection,
 ::selection {
-	background-color: #2e5a88;
+	background-color: var(--primary-blue);
 	color: #fff;
 }
 /* social */
@@ -121,7 +120,7 @@ a.resume-link {
 .social-body ul li a{
 	font-size:20px;
 	color:#fff;
-	background: #2e5a88;
+	background: var(--primary-blue);
 	height: 40px;
 	width: 40px;
 	line-height:40px;
@@ -196,10 +195,10 @@ a:hover{
 	float: right;
 }
 .breadcrumb .breadcrumb-text h2{
-	color: #2e5a88;
+	color: var(--primary-blue);
 	text-transform:capitalize;
 	padding-bottom:10px;
-	border-bottom:5px solid #2e5a88;
+	border-bottom:5px solid var(--primary-blue);
 }
 /*slicknav_menu*/
 .slicknav_menu{
@@ -210,7 +209,7 @@ a:hover{
 	bottom: 15px;
 	right: 15px;
 	padding: 10px 20px;
-	background: #2E5A88;
+	background: var(--primary-blue);
 	color: #fff;
 	font-size: 25px;
 	width: 40px;
@@ -228,13 +227,19 @@ a:hover{
 	Header CSS
 ===========================*/
 .header{
-	background:linear-gradient(-154deg, #2E5A88, #6f85dc);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
 }
 .header .navbar-collapse{
 	padding:0;
 }
 .header .header-inner {
-	background: linear-gradient(-154deg, #2E5A88, #6f85dc);
+	background: linear-gradient(-154deg, var(--primary-blue), var(--secondary-blue));
 	z-index: 9000;
 }
 .header .navbar-nav {
@@ -348,7 +353,7 @@ a:hover{
 ===========================*/
 
 .main-wrapper {
-	margin-top: 10px;
+	padding-top: 60px;
 }
 
 .main-wrapper .container {
@@ -368,17 +373,21 @@ a:hover{
 }
 
 .resume-name {
-	font-size: 3rem;
-	font-weight: 900;
-	letter-spacing: 0.4rem;
-	color: #2E5A88;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: var(--primary-color);
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.05em;
 }
 
 .resume-tag{
 	margin-top: 10px;
-	font-weight: 600;
-	font-size: 1.7rem;
-	margin-bottom: 10px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.2rem;
+	color: var(--accent-color);
+	font-weight: 500;
+	margin-bottom: 1.5rem;
 }
 
 .resume-contact {
@@ -425,10 +434,11 @@ a:hover{
 .resume-section-heading {
 	position: relative;
 	padding-left: 1rem;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	letter-spacing: 0.15rem;
-	color: #2E5A88;
-	font-weight: bold;
+	color: var(--primary-color);
+	font-weight: 600;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .resume-section-heading:before {
@@ -436,7 +446,7 @@ a:hover{
 	display: inline-block;
 	width: 5px;
 	height: 100%;
-	background: #2E5A88;
+	background: var(--primary-color);
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -451,7 +461,7 @@ a:hover{
 }
 
 .item-conf-jour{
-	color: #2c7cce;
+	color: var(--primary-blue);
 	font-weight: bold;
 }
 
@@ -463,30 +473,31 @@ a:hover{
 .item-title{
 	line-height: 1.2;
 	cursor: pointer;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .item-title:hover{
-	color: #2E5A88;
+	color: var(--primary-blue);
 }
 .item-bold{
 	font-weight: bold;
 }
 
 .news-list{
-	list-style: disc;
-	margin-left: 15px;
+	list-style: none;
+	padding-left: 0;
 }
 
 .item-resource{
 	cursor: pointer;
-	color: #2c7cce;
+	color: var(--primary-blue);
 	font-size: 1.7rem;
 }
 .item-resource a{
-	color: #2c7cce;
+	color: var(--primary-blue);
 }
 
 .item-resource a:hover{
-	color: #2c7cce;
+	color: var(--primary-blue);
 }
 
 .news-image-box{
@@ -513,14 +524,14 @@ a:hover{
 	color: #333;
 }
 .hover-green:hover{
-	color: #2E5A88;
+	color: var(--primary-blue);
 }
 .control-group{
 	font-size: 3rem;
 	margin-left: auto;
 	margin-right: auto;
 	width: 12rem;
-	color: #2E5A88;
+	color: var(--primary-blue);
 }
 
 .tag-time{
@@ -546,8 +557,7 @@ a:hover{
 	width: 0;
 	border-radius: 0.2rem;
 	height: 0.4rem;
-	/*background-color: #1e7e34;*/
-	background-color: #2E5A88;
+	background-color: var(--primary-blue);
 }
 
 .progress-button{
@@ -558,7 +568,7 @@ a:hover{
 	background-color: white;
 	border-radius: 0.5rem;
 	position: relative;
-	border:0.1rem solid #2E5A88;
+	border:0.1rem solid var(--primary-blue);
 
 	cursor: pointer;
 	top: -0.3rem;
@@ -566,7 +576,7 @@ a:hover{
 }
 
 .progress-button:hover{
-	border:0.1rem solid #2E5A88;
+	border:0.1rem solid var(--primary-blue);
 	box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.175) !important;
 }
 
@@ -582,7 +592,7 @@ a:hover{
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-color: #2E5A88;
+	background-color: var(--primary-blue);
 }
 
 .container-audio{
@@ -636,7 +646,7 @@ a:hover{
 	cursor: pointer;
 	width: 4rem;
 	/*background-color: #54B689;*/
-	background-color: #2E5A88;
+	background-color: var(--primary-blue);
 	color: whitesmoke;
 	box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
 	border: 1px solid rgba(0,0,0,0.025);
@@ -670,7 +680,7 @@ a:hover{
 	border-radius: 0.2rem;
 	height: 0.4rem;
 	/* background-color: #1e7e34; */
-	background-color: #2E5A88;
+	background-color: var(--primary-blue);
 }
 
 .control-group-right-item{
@@ -712,7 +722,7 @@ tbody>tr:hover{
 	text-align: center;
 	font-weight: bolder;
 	font-size: 1.8rem;
-	color: #2E5A88;
+	color: var(--primary-blue);
 	margin-top: 0.5rem;
 }
 
@@ -729,4 +739,802 @@ tbody>tr:hover{
 .link-empty{
 	width: 1.5rem;
 	display: inline-block;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.main-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+.main-content.loaded {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ensure the container is visible */
+#container {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Make sure the header is visible */
+.header {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Make sure the footer is visible */
+.footer {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Modern color scheme */
+:root {
+    --primary-color: #2c3e50;     /* Deep slate */
+    --secondary-color: #34495e;   /* Slightly lighter slate */
+    --accent-color: #3498db;      /* Soft blue */
+    --text-color: #2c3e50;        /* Dark slate for text */
+    --light-bg: #f5f6fa;          /* Very light gray */
+    --border-color: rgba(0,0,0,0.1);
+    --news-text-size: 1.1rem;
+    --primary-blue: #2563eb;  /* Modern vibrant blue */
+    --secondary-blue: #3b82f6; /* Lighter blue for accents */
+    --accent-blue: #60a5fa;   /* Light blue for highlights */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+/* Header styling */
+.header {
+    background: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.header .nav li a {
+    color: rgba(255,255,255,0.9);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 1rem 1.5rem;
+}
+
+.header .nav li:hover a,
+.header .nav li.current a {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Main content wrapper */
+.main-wrapper {
+    margin-top: 2rem;
+}
+
+.main-wrapper .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Resume wrapper */
+.resume-wrapper {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+.resume-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Typography improvements */
+.resume-name {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.resume-tag {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact section styling */
+.resume-contact {
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.list-unstyled li i {
+    margin-right: 0.8rem;
+    color: var(--primary-color);
+}
+
+/* Profile image styling */
+.resume-profile-image {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    max-width: 250px;
+    margin: 1rem auto;
+}
+
+.resume-profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Section headings */
+.resume-section-heading {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2rem 0 1.5rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Publication items */
+.item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.item-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.item-author {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.item-myself {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Badge styling */
+.badge {
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+/* Social links */
+.resume-social-list a {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.resume-social-list a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* News section styling */
+.news-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.news-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.news-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item-news-date {
+    font-size: var(--news-text-size);
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+/* Footer styling */
+.footer {
+    background: var(--primary-color);
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border-color);
+    color: white;
+}
+
+.footer .copyright {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .resume-wrapper {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .resume-name {
+        font-size: 2rem;
+    }
+    
+    .resume-contact {
+        border-left: none;
+        border-top: 3px solid var(--primary-color);
+        padding-left: 0;
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover effects */
+.hover-effect {
+    transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Introduction text */
+.introduction {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-top: 2rem;
+}
+
+.introduction p {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: white;
+    text-decoration: none;
+}
+
+/* More link styles */
+a[href="news.html"],
+a[href="publication.html"] {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+a[href="news.html"]:hover,
+a[href="publication.html"]:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: white;
+    text-decoration: none;
+}
+
+/* Modern Header and Navigation */
+.header {
+    background: #2d3748;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 1.2rem 0.5rem;
+    transition: color 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.nav-link:hover {
+    color: #63b3ed;
+}
+
+.nav-item.current .nav-link {
+    color: #4299e1;
+    position: relative;
+}
+
+.nav-item.current .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #4299e1;
+}
+
+/* Adjust main content for fixed header */
+.main-wrapper {
+    padding-top: 60px;
+}
+
+/* Blog Styles */
+.blog-post-preview {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.blog-preview-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+    color: var(--accent-color);
+}
+
+.blog-date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-summary {
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Blog Post Page Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.blog-post-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.blog-post-meta {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.blog-post-meta span {
+    margin-right: 1rem;
+}
+
+.blog-post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.blog-post-content h2 {
+    color: var(--primary-color);
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+}
+
+.blog-post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.blog-post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.math-block {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.math-block .MathJax {
+    font-size: 1.1em !important;
+}
+
+/* Inline math styling */
+.math-inline {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+/* Equation numbering */
+.equation-number {
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 1rem;
+}
+
+/* Math block with caption */
+.math-block-with-caption {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.math-block-with-caption .math-block {
+    display: inline-block;
+    margin: 0;
+}
+
+.math-caption {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Responsive math blocks */
+@media (max-width: 768px) {
+    .math-block {
+        padding: 1rem;
+        font-size: 1em;
+    }
+    
+    .math-block .MathJax {
+        font-size: 1em !important;
+    }
+}
+
+/* Blog Post Image Styles */
+.blog-post-main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.blog-post-diagram {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.blog-post-diagram img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.diagram-caption {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Blog Preview Image Styles */
+.blog-preview-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.blog-post-preview:hover .blog-preview-image {
+    transform: scale(1.05);
+}
+
+/* Distill-style Blog Layout */
+.blog-article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.blog-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.blog-description {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.blog-post-preview {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3rem;
+}
+
+.blog-post-preview:last-child {
+    border-bottom: none;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.post-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-title a:hover {
+    color: var(--accent-color);
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-meta span {
+    margin-right: 1rem;
+}
+
+.post-summary {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.post-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #f0f0f0;
+    color: #666;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* Blog Post Page Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.blog-post-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.blog-post-meta {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.blog-post-meta span {
+    margin-right: 1rem;
+}
+
+.blog-post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.blog-post-content h2 {
+    color: var(--primary-color);
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+}
+
+.blog-post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.blog-post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.math-block {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+/* Responsive Blog Styles */
+@media (max-width: 768px) {
+    .blog-article {
+        padding: 1rem;
+    }
+    
+    .blog-title {
+        font-size: 2rem;
+    }
+    
+    .post-title {
+        font-size: 1.5rem;
+    }
+    
+    .blog-post-title {
+        font-size: 2rem;
+    }
 }

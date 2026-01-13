@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Blog - Abdelwahed Khamis</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/NTU.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+<div class="main-content" v-bind:class="{ 'loaded': isLoaded }">
+    <div id="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div id="header">
+        <header class="header">
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li class="nav-item" v-if="index" :class="{ current: currentPage === 'index' }">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item" v-if="blog" :class="{ current: currentPage === 'blog' }">
+                        <a href="blog.html" class="nav-link">BLOG</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="main-wrapper" id="container">
+        <div class="container">
+            <article class="blog-article">
+                <div class="blog-header">
+                    <h1 class="blog-title">Blog Posts</h1>
+                    <div class="blog-description">
+                        Exploring topics in machine learning, optimal transport, and mathematical foundations.
+                    </div>
+                </div>
+
+                <div class="blog-list">
+                    <div class="blog-post-preview">
+                        <div class="blog-post-content">
+                            <h2 class="post-title">
+                                <a href="blog/optimal-transport-introduction.html">Introduction to Optimal Transport Theory</a>
+                            </h2>
+                            <div class="post-meta">
+                                <span class="post-date">March 15, 2024</span>
+                                <span class="post-author">By Abdelwahed Khamis</span>
+                            </div>
+                            <p class="post-summary">
+                                A comprehensive introduction to optimal transport theory, its mathematical foundations, and applications in machine learning.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">Optimal Transport</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Mathematics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-post-preview">
+                        <div class="blog-post-content">
+                            <h2 class="post-title">
+                                <a href="blog/wasserstein-gans.html">Wasserstein GANs: A Deep Dive</a>
+                            </h2>
+                            <div class="post-meta">
+                                <span class="post-date">March 10, 2024</span>
+                                <span class="post-author">By Abdelwahed Khamis</span>
+                            </div>
+                            <p class="post-summary">
+                                Exploring the connection between optimal transport and generative adversarial networks, with a focus on Wasserstein GANs.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">GANs</span>
+                                <span class="tag">Deep Learning</span>
+                                <span class="tag">Wasserstein</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-post-preview">
+                        <div class="blog-post-content">
+                            <h2 class="post-title">
+                                <a href="blog/ot-nlp.html">Optimal Transport in Natural Language Processing</a>
+                            </h2>
+                            <div class="post-meta">
+                                <span class="post-date">March 5, 2024</span>
+                                <span class="post-author">By Abdelwahed Khamis</span>
+                            </div>
+                            <p class="post-summary">
+                                How optimal transport is revolutionizing natural language processing tasks, from text generation to document classification.
+                            </p>
+                            <div class="post-tags">
+                                <span class="tag">NLP</span>
+                                <span class="tag">Text Analysis</span>
+                                <span class="tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer class="footer text-center py-4">
+        <small class="copyright">{{information}}</small>
+    </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/index-vue.js"></script>
+</body>
+</html> 
