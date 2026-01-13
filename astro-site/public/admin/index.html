@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>Content Manager | Abdelwahed Khamis</title>
+  <style>
+    body { margin: 0; }
+  </style>
 </head>
 <body>
-  <!-- This is where the Decap CMS app will mount -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    // Debug: Log auth messages
+    window.addEventListener('message', function(e) {
+      console.log('Received message:', e.data);
+    });
+  </script>
 </body>
 </html>
