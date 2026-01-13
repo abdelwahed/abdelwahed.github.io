@@ -6,16 +6,40 @@
   <meta name="robots" content="noindex" />
   <title>Content Manager | Abdelwahed Khamis</title>
   <style>
-    body { margin: 0; }
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    .loading { display: flex; justify-content: center; align-items: center; height: 100vh; }
   </style>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
-    // Debug: Log auth messages
-    window.addEventListener('message', function(e) {
-      console.log('Received message:', e.data);
-    });
+    // Handle OAuth redirect with token in URL fragment
+    (function() {
+      var hash = window.location.hash.substring(1);
+      if (hash) {
+        var params = new URLSearchParams(hash);
+        var token = params.get('access_token');
+        
+        if (token) {
+          // Store token for Decap CMS
+          var userData = {
+            token: { access_token: token },
+            provider: 'github'
+          };
+          
+          try {
+            localStorage.setItem('netlify-cms-user', JSON.stringify(userData));
+            console.log('Token stored successfully');
+          } catch(e) {
+            console.error('Failed to store token:', e);
+          }
+          
+          // Clean up URL and reload
+          window.history.replaceState(null, '', window.location.pathname);
+          window.location.reload();
+        }
+      }
+    })();
   </script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
