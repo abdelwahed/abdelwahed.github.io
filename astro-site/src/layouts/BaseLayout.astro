@@ -28,82 +28,167 @@ const currentPath = Astro.url.pathname;
 </head>
 <body class="bg-stone-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-850 shadow-lg">
+  <header class="sticky top-0 left-0 right-0 z-50 bg-slate-850 shadow-lg">
     <nav class="max-w-6xl mx-auto px-6">
-      <ul class="flex items-center justify-center gap-1 md:gap-8 h-16">
-        <li>
-          <a 
-            href="/" 
-            class:list={[
-              "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
-              currentPath === "/" || currentPath === "/index.html" 
-                ? "text-amber-400 border-b-2 border-amber-400" 
-                : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
-            ]}
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a 
-            href="/publications" 
-            class:list={[
-              "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
-              currentPath.includes("/publications")
-                ? "text-amber-400 border-b-2 border-amber-400" 
-                : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
-            ]}
-          >
-            Publications
-          </a>
-        </li>
-        <li>
-          <a 
-            href="/lectures" 
-            class:list={[
-              "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
-              currentPath.includes("/lectures")
-                ? "text-amber-400 border-b-2 border-amber-400" 
-                : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
-            ]}
-          >
-            Lectures
-          </a>
-        </li>
-        <li>
-          <a 
-            href="/videos" 
-            class:list={[
-              "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
-              currentPath.includes("/videos")
-                ? "text-amber-400 border-b-2 border-amber-400" 
-                : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
-            ]}
-          >
-            Videos
-          </a>
-        </li>
-        <!-- Blog tab disabled for now
-        <li>
-          <a 
-            href="/blog" 
-            class:list={[
-              "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
-              currentPath.includes("/blog")
-                ? "text-amber-400 border-b-2 border-amber-400" 
-                : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
-            ]}
-          >
-            Blog
-          </a>
-        </li>
-        -->
-      </ul>
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo/Name for mobile -->
+        <a href="/" class="md:hidden text-white font-mono font-semibold text-lg">AK</a>
+        
+        <!-- Hamburger button (mobile only) -->
+        <button 
+          id="mobile-menu-btn"
+          class="md:hidden text-stone-300 hover:text-white p-2"
+          aria-label="Toggle menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center justify-center gap-8 w-full">
+          <li>
+            <a 
+              href="/" 
+              class:list={[
+                "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
+                currentPath === "/" || currentPath === "/index.html" 
+                  ? "text-amber-400 border-b-2 border-amber-400" 
+                  : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
+              ]}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/publications" 
+              class:list={[
+                "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
+                currentPath.includes("/publications")
+                  ? "text-amber-400 border-b-2 border-amber-400" 
+                  : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
+              ]}
+            >
+              Publications
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/lectures" 
+              class:list={[
+                "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
+                currentPath.includes("/lectures")
+                  ? "text-amber-400 border-b-2 border-amber-400" 
+                  : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
+              ]}
+            >
+              Talks
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/videos" 
+              class:list={[
+                "px-4 py-2 text-sm font-medium tracking-wide uppercase transition-all duration-200",
+                currentPath.includes("/videos")
+                  ? "text-amber-400 border-b-2 border-amber-400" 
+                  : "text-stone-300 hover:text-white hover:bg-slate-700/50 rounded"
+              ]}
+            >
+              Videos
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+        <ul class="flex flex-col gap-2 pb-4">
+          <li>
+            <a 
+              href="/" 
+              class:list={[
+                "block px-4 py-3 text-sm font-medium tracking-wide uppercase transition-all duration-200 rounded",
+                currentPath === "/" || currentPath === "/index.html" 
+                  ? "text-amber-400 bg-slate-700/50" 
+                  : "text-stone-300 hover:text-white hover:bg-slate-700/50"
+              ]}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/publications" 
+              class:list={[
+                "block px-4 py-3 text-sm font-medium tracking-wide uppercase transition-all duration-200 rounded",
+                currentPath.includes("/publications")
+                  ? "text-amber-400 bg-slate-700/50" 
+                  : "text-stone-300 hover:text-white hover:bg-slate-700/50"
+              ]}
+            >
+              Publications
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/lectures" 
+              class:list={[
+                "block px-4 py-3 text-sm font-medium tracking-wide uppercase transition-all duration-200 rounded",
+                currentPath.includes("/lectures")
+                  ? "text-amber-400 bg-slate-700/50" 
+                  : "text-stone-300 hover:text-white hover:bg-slate-700/50"
+              ]}
+            >
+              Talks
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/videos" 
+              class:list={[
+                "block px-4 py-3 text-sm font-medium tracking-wide uppercase transition-all duration-200 rounded",
+                currentPath.includes("/videos")
+                  ? "text-amber-400 bg-slate-700/50" 
+                  : "text-stone-300 hover:text-white hover:bg-slate-700/50"
+              ]}
+            >
+              Videos
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
+  
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu') as HTMLElement;
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    
+    let isOpen = false;
+    
+    menuBtn?.addEventListener('click', () => {
+      isOpen = !isOpen;
+      
+      if (isOpen) {
+        // Expand: set max-height to scrollHeight for smooth animation
+        mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+      } else {
+        // Collapse: animate back to 0
+        mobileMenu.style.maxHeight = '0px';
+      }
+      
+      menuIcon?.classList.toggle('hidden');
+      closeIcon?.classList.toggle('hidden');
+    });
+  </script>
 
   <!-- Main Content -->
-  <main class="flex-1 pt-20">
+  <main class="flex-1">
     <slot />
   </main>
 

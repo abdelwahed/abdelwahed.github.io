@@ -1,4 +1,6 @@
 ---
+import { marked } from 'marked';
+
 interface Props {
   date: string;
   content: string;
@@ -6,6 +8,9 @@ interface Props {
 }
 
 const { date, content, index = 0 } = Astro.props;
+
+// Parse markdown to HTML (handles both markdown and existing HTML)
+const parsedContent = marked.parseInline(content || '');
 ---
 
 <article 
@@ -20,7 +25,7 @@ const { date, content, index = 0 } = Astro.props;
   </div>
 
   <!-- Content -->
-  <div class="flex-1 text-slate-700 leading-relaxed" set:html={content} />
+  <div class="flex-1 text-slate-700 leading-relaxed" set:html={parsedContent} />
 </article>
 
 <style>
@@ -29,5 +34,3 @@ const { date, content, index = 0 } = Astro.props;
     font-weight: 600;
   }
 </style>
-
-

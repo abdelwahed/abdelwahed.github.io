@@ -3,6 +3,25 @@
     {
       "resources": {},
       "authors": [
+        "Ahmed Akl",
+        "Abdelwahed Khamis",
+        "Zhe Wang",
+        "Ali Cheraghian",
+        "Sara Khalifa",
+        "Kewen Wang"
+      ],
+      "venueShort": "BMVC",
+      "url": "https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_294/paper.pdf",
+      "venue": "The British Machine Vision Conference (B)",
+      "authorPosition": 2,
+      "title": "Task Progressive Curriculum Learning for Robust Visual Question Answering",
+      "image": "/images/tpcl_signature.jpg",
+      "selected": true,
+      "year": 2025
+    },
+    {
+      "resources": {},
+      "authors": [
         "Isura Nirmal",
         "Wen Hu",
         "Mahbub Hassan",
@@ -14,9 +33,9 @@
       "venue": "The International Conference on Embedded Networked Sensor Systems 2025 (A*)",
       "authorPosition": 5,
       "title": "mmWave-based Hand Hygiene Monitoring through Beam Steering and Combining Techniques",
+      "image": "/images/beamsteerx.png",
       "selected": true,
-      "year": 2025,
-      "image": "/images/beamsteerx.png"
+      "year": 2025
     },
     {
       "resources": {},
@@ -28,14 +47,13 @@
         "Brano Kusy"
       ],
       "venueShort": "PerCom Workshops",
-      "url": "",
+      "url": "https://eprints.qut.edu.au/259417/1/SensorGPT_A_New_Paradigm_for_Synthetic_Sensory_Data_Generation.pdf",
       "venue": "PerCom Workshops 2025 (A*)",
       "authorPosition": 2,
       "title": "SensorGPT: A New Paradigm for Synthetic Sensory Data Generation",
+      "image": "/images/sensorgpt.jpg",
       "selected": true,
-      "url": "https://eprints.qut.edu.au/259417/1/SensorGPT_A_New_Paradigm_for_Synthetic_Sensory_Data_Generation.pdf",
-      "year": 2025,
-      "image": "/images/sensorgpt.jpg"
+      "year": 2025
     },
     {
       "resources": {},
@@ -47,34 +65,13 @@
         "Brano Kusy"
       ],
       "venueShort": "PerCom Workshops",
-      "url": "",
+      "url": "https://eprints.qut.edu.au/259414/1/Synthetic_Sensory_Data_Generators_How_Much_Progress_Are_We_Making.pdf",
       "venue": "PerCom Workshops 2025 (A*)",
       "authorPosition": 2,
       "title": "Synthetic Sensory Data Generators: How Much Progress Are We Making?",
+      "image": "/images/synthetic.jpg",
       "selected": true,
-      "url": "https://eprints.qut.edu.au/259414/1/Synthetic_Sensory_Data_Generators_How_Much_Progress_Are_We_Making.pdf",
-      "year": 2025,
-      "image": "/images/synthetic.jpg"
-    },
-    {
-      "resources": {},
-      "authors": [
-        "Ahmed Akl",
-        "Abdelwahed Khamis",
-        "Zhe Wang",
-        "Ali Cheraghian",
-        "Sara Khalifa",
-        "Kewen Wang"
-      ],
-      "venueShort": "BMVC",
-      "url": "",
-      "venue": "The British Machine Vision Conference (B)",
-      "url": "https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_294/paper.pdf",
-      "authorPosition": 2,
-      "title": "Task Progressive Curriculum Learning for Robust Visual Question Answering",
-      "selected": true,
-      "year": 2025,
-      "image": "/images/tpcl_signature.jpg"
+      "year": 2025
     },
     {
       "resources": {
@@ -89,9 +86,9 @@
       "venue": "The International Conference on Pervasive Computing and Communications 2025 (A*)",
       "authorPosition": 1,
       "title": "NeuralPrefix: A Zero-shot Sensory Data Imputation Plugin",
+      "image": "/images/NeuralPrefix.png",
       "selected": true,
-      "year": 2025,
-      "image": "/images/NeuralPrefix.png"
+      "year": 2025
     },
     {
       "resources": {},
@@ -109,9 +106,9 @@
       "venue": "International Joint Conference on Artificial Intelligence 2024 (A*)",
       "authorPosition": 4,
       "title": "Real-time Multi-modal Object Detection and Tracking on Edge for Regulatory Compliance Monitoring",
+      "image": "/images/realtime_multimodal_object.png",
       "selected": true,
-      "year": 2024,
-      "image": "/images/realtime_multimodal_object.png"
+      "year": 2024
     },
     {
       "resources": {
@@ -129,9 +126,9 @@
       "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence 2024 [IF: 23.6]",
       "authorPosition": 1,
       "title": "Scalable Optimal Transport Methods in Machine Learning: A Contemporary Survey",
+      "image": "/images/OT.jpg",
       "selected": true,
-      "year": 2024,
-      "image": "/images/OT.jpg"
+      "year": 2024
     },
     {
       "resources": {
@@ -150,9 +147,9 @@
       "venue": "IEEE Internet of Things Journal 2024 [IF: 10.6]",
       "authorPosition": 2,
       "title": "WiFi2Radar: Orientation Independent Single Receiver WiFi Sensing via WiFi to Radar Translation",
+      "image": "/images/WiFi2Radar.png",
       "selected": true,
-      "year": 2024,
-      "image": "/images/WiFi2Radar.png"
+      "year": 2024
     },
     {
       "resources": {},
@@ -171,9 +168,9 @@
       "venue": "Springer Artificial Intelligence Review 2024 [IF: 12.0]",
       "authorPosition": 2,
       "title": "Topological Deep Learning: A Review of an Emerging Paradigm",
+      "image": "/images/topological_deep_learning.png",
       "selected": true,
-      "year": 2024,
-      "image": "/images/topological_deep_learning.png"
+      "year": 2024
     },
     {
       "resources": {},
@@ -191,9 +188,9 @@
       "venue": "ICCV 2023 (A*)",
       "authorPosition": 5,
       "title": "OCHID-Fi: Occlusion-Robust Hand Pose Estimation in 3D via RF-Vision",
+      "image": "/images/OCHID.png",
       "selected": true,
-      "year": 2023,
-      "image": "/images/OCHID.png"
+      "year": 2023
     },
     {
       "resources": {},
@@ -210,9 +207,9 @@
       "venue": "ICML TDL Workshop 2023",
       "authorPosition": 5,
       "title": "ICML 2023 Topological Deep Learning Challenge: Design and Results",
+      "image": "/images/tdl_challenge.jpg",
       "selected": true,
-      "year": 2023,
-      "image": "/images/tdl_challenge.jpg"
+      "year": 2023
     },
     {
       "resources": {},
@@ -228,9 +225,9 @@
       "venue": "IEEE Communications Surveys and Tutorials [IF: 35.6]",
       "authorPosition": 2,
       "title": "Deep Learning for Radio-based Human Sensing: Recent Advances and Future Directions",
+      "image": "/images/rf_survey.jpg",
       "selected": true,
-      "year": 2022,
-      "image": "/images/rf_survey.jpg"
+      "year": 2022
     },
     {
       "resources": {},
@@ -248,9 +245,9 @@
       "venue": "IPSN 2019 [A*]",
       "authorPosition": 4,
       "title": "H2B: Heartbeat-based Secret Key Generation Using Piezo Vibration Sensors",
+      "image": "/images/h2b.jpg",
       "selected": true,
-      "year": 2019,
-      "image": "/images/h2b.jpg"
+      "year": 2019
     },
     {
       "resources": {
@@ -269,9 +266,9 @@
       "venue": "SenSys 2020 [A*]",
       "authorPosition": 1,
       "title": "RFWash: A Weakly Supervised Tracking of Hand Hygiene Technique",
+      "image": "/images/rfwash.jpg",
       "selected": true,
-      "year": 2020, 
-      "image": "/images/rfwash.jpg"
+      "year": 2020
     },
     {
       "resources": {
@@ -288,9 +285,9 @@
       "venue": "Mobiquitious 2018",
       "authorPosition": 1,
       "title": "Cardiofi: Enabling Heart Rate Monitoring on Unmodified COTS WiFi Devices",
+      "image": "/images/cardiofi.jpg",
       "selected": true,
-      "year": 2018,
-      "image": "/images/cardiofi.jpg"
+      "year": 2018
     },
     {
       "resources": {
@@ -308,9 +305,9 @@
       "venue": "Signal, Image and Video Processing 2025",
       "authorPosition": 2,
       "title": "Crossformer: Cross Spatio-temporal Transformer for 3D Human Pose Estimation",
+      "image": "/images/crossformer.jpg",
       "selected": false,
-      "year": 2025,
-      "image": "/images/crossformer.jpg"
+      "year": 2025
     },
     {
       "resources": {
@@ -327,9 +324,9 @@
       "venue": "Elsevier Ad Hoc Networks Journal 2020 [IF 4.8]",
       "authorPosition": 1,
       "title": "WiRelax: Towards Real-time Respiratory Biofeedback During Meditation Using WiFi",
+      "image": "/images/wirelax.jpg",
       "selected": true,
-      "year": 2020,
-      "image": "/images/wirelax.jpg"
+      "year": 2020
     }
   ]
 }

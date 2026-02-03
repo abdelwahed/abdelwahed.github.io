@@ -1,8 +1,32 @@
 {
   "items": [
     {
+      "date": "January 2026",
+      "content": "Our paper **SolarTrack** was accepted in [PerCom 2026](https://percom.org/accepted-papers-main-conference/). Acceptance rate 15.6%."
+    },
+    {
+      "date": "January 2026",
+      "content": "Our work **HyperEcho** was accepted in PerCom's [Pervasive Radars](https://perradar.github.io/) workshop."
+    },
+    {
+      "date": "December 2025",
+      "content": "I have been invited to serve as TPC for [EWSN 2026](https://ewsn26.netd.cs.tu-dresden.de/)."
+    },
+    {
+      "date": "October 2025",
+      "content": "I have been invited to serve as TPC for the research paper track on Systems and Infrastructure for Web, Mobile, and Web of Things in [The Web Conference 2026](https://www2026.thewebconf.org/)."
+    },
+    {
+      "date": "August 2025",
+      "content": "I have been invited to serve as TPC for **PerCom WIP** track."
+    },
+    {
+      "date": "June 2025",
+      "content": "I have been named an **Outstanding Reviewer** for [CVPR 2025](https://cvpr.thecvf.com/Conferences/2025/ProgramCommittee)!"
+    },
+    {
       "date": "March 2025",
-      "content": "I was invited to serve as a <strong>TPC</strong> in <strong>UbiComp/ISWC 2025</strong>"
+      "content": "I was invited to serve as a TPC in **UbiComp/ISWC 2025**"
     },
     {
       "date": "March 2025",

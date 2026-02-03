@@ -10,8 +10,8 @@ backend:
 # Enable local backend for development
 local_backend: true
 
-# Media settings  
-media_folder: "astro-site/public/images"
+# Media settings (relative to astro-site/)
+media_folder: "public/images"
 public_folder: "/images"
 
 # Site settings
@@ -33,7 +33,7 @@ collections:
     files:
       - name: "profile"
         label: "Profile Information"
-        file: "astro-site/src/data/site.json"
+        file: "src/data/site.json"
         fields:
           - { name: "name", label: "Full Name", widget: "string" }
           - { name: "title", label: "Job Title", widget: "string" }
@@ -59,7 +59,7 @@ collections:
     files:
       - name: "all_news"
         label: "All News Items"
-        file: "astro-site/src/data/news.json"
+        file: "src/data/news.json"
         fields:
           - name: "items"
             label: "News Items"
@@ -69,7 +69,13 @@ collections:
             summary: "{{fields.date}} - {{fields.content}}"
             fields:
               - { name: "date", label: "Date", widget: "string", hint: "e.g., March 2025" }
-              - { name: "content", label: "Content (HTML allowed)", widget: "text" }
+              - name: "content"
+                label: "Content"
+                widget: "markdown"
+                minimal: true
+                buttons: ["bold", "italic", "link"]
+                editor_components: []
+                modes: ["rich_text"]
 
   # ===== PUBLICATIONS =====
   - name: "publications"
@@ -77,7 +83,7 @@ collections:
     files:
       - name: "all_publications"
         label: "All Publications"
-        file: "astro-site/src/data/publications.json"
+        file: "src/data/publications.json"
         fields:
           - name: "items"
             label: "Publications"
@@ -116,7 +122,7 @@ collections:
     files:
       - name: "all_videos"
         label: "System Demo Videos"
-        file: "astro-site/src/data/videos.json"
+        file: "src/data/videos.json"
         fields:
           - name: "items"
             label: "Videos"
@@ -142,7 +148,7 @@ collections:
     files:
       - name: "all_lectures"
         label: "All Lectures"
-        file: "astro-site/src/data/lectures.json"
+        file: "src/data/lectures.json"
         fields:
           - name: "items"
             label: "Lecture Series"
@@ -153,16 +159,19 @@ collections:
             fields:
               - { name: "id", label: "ID", widget: "string" }
               - { name: "title", label: "Title", widget: "string" }
-              - { name: "type", label: "Type", widget: "select", options: ["playlist", "single"] }
-              - { name: "description", label: "Description", widget: "text" }
               - { name: "year", label: "Year", widget: "number", value_type: "int" }
               - name: "venues"
                 label: "Venues"
                 widget: "list"
                 field: { name: "venue", label: "Venue", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "thumbnail", label: "Thumbnail URL", widget: "string", required: false }
               - name: "videos"
                 label: "Videos"
                 widget: "list"
+                collapsed: true
+                summary: "Part {{fields.part}}: {{fields.title}}"
                 fields:
-                  - { name: "youtubeId", label: "YouTube ID", widget: "string" }
+                  - { name: "part", label: "Part Number", widget: "number", value_type: "int" }
                   - { name: "title", label: "Title", widget: "string" }
+                  - { name: "youtubeId", label: "YouTube ID", widget: "string" }

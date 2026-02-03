@@ -20,20 +20,12 @@ const years = Object.keys(pubsByYear).map(Number).sort((a, b) => b - a);
 
 <BaseLayout title="Publications | Abdelwahed Khamis">
   <div class="max-w-5xl mx-auto px-6 py-12">
-    <!-- Header -->
-    <div class="mb-10">
-      <p class="text-slate-600">
-        Below is a selection of my publications across radio-based sensing, optimal transport, and topological deep learning.
-      </p>
-    </div>
-
     <!-- Publications by Year -->
     {years.map((year) => (
       <section class="mb-12">
         <div class="flex items-center gap-4 mb-6">
           <span class="text-2xl font-serif font-bold text-slate-800">{year}</span>
           <div class="flex-1 h-px bg-stone-200"></div>
-          <span class="text-sm text-slate-500">{pubsByYear[year].length} papers</span>
         </div>
         <div class="grid gap-6">
           {pubsByYear[year].map((pub, index) => (
