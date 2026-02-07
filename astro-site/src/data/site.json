@@ -1,5 +1,15 @@
 {
   "name": "Abdelwahed Khamis",
+  "phdOpportunity": {
+    "status": "open",
+    "title": "PhD Scholarship Available",
+    "titleFilled": "PhD Position Filled",
+    "description": "I am seeking <strong>domestic Australian PhD students</strong> for a CSIRO Industry PhD on <em>Intelligent Edge Computing for Smart Grids</em> with Energy Queensland.",
+    "descriptionFilled": "The CSIRO Industry PhD position on <em>Intelligent Edge Computing for Smart Grids</em> has been filled.",
+    "futureNote": "I am actively seeking PhD students. If you are interested in future opportunities, please send me your CV and transcripts.",
+    "url": "https://research.csiro.au/iphd-opportunities/intelligent-edge-computing-for-adaptive-demand-response-management/",
+    "emailNote": "Email me if interested."
+  },
   "title": "Research Scientist, Data61, CSIRO",
   "email": "abdelwahed.khamis@data61.csiro.au",
   "location": "1 Technology Ct, Pullenvale QLD 4069",
@@ -43,6 +53,12 @@
       "role": "Intern student",
       "period": "Nov 2025 - Feb 2026",
       "project": "Joint supervision with Volkan Dedeoglu (CSIRO)"
+    },
+    {
+      "name": "Renuka Sharma",
+      "role": "Postdoc, CSIRO",
+      "period": "Aug 2023 - May 2025",
+      "project": "AI Intelligent Multimodal Sensor Platform. Now at <a href=\"https://www.qcif.edu.au/\" target=\"_blank\" class=\"underline hover:text-amber-500\">QCIF</a>"
     },
     {
       "name": "Dan Bretheron",
