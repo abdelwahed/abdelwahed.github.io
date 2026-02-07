@@ -3,6 +3,25 @@
     {
       "resources": {},
       "authors": [
+        "Ali Zia",
+        "Usman Ali",
+        "Umer Ramzan",
+        "Abdul Rehman",
+        "Abdelwahed Khamis",
+        "Wei Xiang"
+      ],
+      "venueShort": "Preprint",
+      "url": "https://arxiv.org/pdf/2601.20333",
+      "venue": "arXiv Preprint",
+      "authorPosition": 5,
+      "title": "Test-Time Adaptation for Anomaly Segmentation via Topology-Aware Optimal Transport Chaining",
+      "image": "/images/tt_anomaly.jpg",
+      "selected": true,
+      "year": 2026
+    },
+    {
+      "resources": {},
+      "authors": [
         "Ahmed Akl",
         "Abdelwahed Khamis",
         "Zhe Wang",
