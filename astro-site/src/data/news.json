@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "date": "April 2026",
+      "content": "I was invited to serve on the **Technical Program Committee (TPC)** for the **Notes and Briefs** track of [ISWC/UbiComp 2026](https://iswc.net/iswc2026/)."
+    },
+    {
+      "date": "March 2026",
+      "content": "I presented (online) my work **HyperEcho: Structured Higher Order Representation for Automotive Radar Semantic Segmentation** at IEEE PerCom's [Pervasive Radars](https://perradar.github.io/) workshop."
+    },
+    {
       "date": "January 2026",
       "content": "Our paper **SolarTrack** was accepted in [PerCom 2026](https://percom.org/accepted-papers-main-conference/). Acceptance rate 15.6%."
     },
